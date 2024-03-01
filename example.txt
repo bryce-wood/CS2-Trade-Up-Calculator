@@ -1,0 +1,69 @@
+https://steamcommunity.com/market/search/render/?search_descriptions=0&sort_column=default&sort_dir=desc&appid=730&norender=1&count=10&app_name=Counter-Strike%202
+results in
+     |
+     |
+     V
+{
+    "success":true,
+    "start":0,
+    "pagesize":10,"total_count":20944,
+    "searchdata":
+        {
+            "query":"",
+            "search_descriptions":false,
+            "total_count":20944,
+            "pagesize":10,
+            "prefix":"searchResults",
+            "class_prefix":"market"
+    },
+    "results":
+        [
+            {
+                "name":"CZ75-Auto | Framework (Battle-Scarred)",
+                "hash_name":"CZ75-Auto | Framework (Battle-Scarred)",
+                "sell_listings":32,"sell_price":64,
+                "sell_price_text":"$0.64",
+                "app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+                "app_name":"Counter-Strike 2",
+                "asset_description":
+                    {
+                        "appid":730,
+                        "classid":"4578725141",
+                        "instanceid":"519977179",
+                        "background_color":"",
+                        "icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotaDyfgZf2-r3ZzhQ-NWxm4mHm-LnOrTfqWNU6dNoxLuZp4jwjVKxqBA9YGj3LYXBIVBoZwnYqVbvx7q-hZTutMzNnHZmvSQ8pSGKl6gP1mA",
+                        "tradable":1,
+                        "name":"CZ75-Auto | Framework (Battle-Scarred)",
+                        "name_color":"D2D2D2",
+                        "type":"Consumer Grade Pistol",
+                        "market_name":"CZ75-Auto | Framework (Battle-Scarred)",
+                        "market_hash_name":"CZ75-Auto | Framework (Battle-Scarred)",
+                        "commodity":0
+                    },
+                "sale_price_text":"$0.62"
+            },
+            {
+                "name":"Souvenir R8 Revolver | Nitro (Well-Worn)",
+                "hash_name":"Souvenir R8 Revolver | Nitro (Well-Worn)",
+                "sell_listings":161,"sell_price":43,"sell_price_text":"$0.43",
+                "app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg",
+                "app_name":"Counter-Strike 2",
+                "asset_description":
+                {
+                    "appid":730,
+                    "classid":"5348145090",
+                    "instanceid":"188530139",
+                    "background_color":"",
+                    "icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopL-zJAt21uH3YjJ94863moeOqPb3ML7fgngC18h0juDU-MKl2QOwrxY_Nm31JdWce1RqZ1zU-FS8kOu6h8O_vJXMzHtksnIq4nmLgVXp1mt-q3CA",
+                    "tradable":1,
+                    "name":"Souvenir R8 Revolver | Nitro (Well-Worn)",
+                    "name_color":"FFD700",
+                    "type":"Souvenir Industrial Grade Pistol",
+                    "market_name":"Souvenir R8 Revolver | Nitro (Well-Worn)",
+                    "market_hash_name":"Souvenir R8 Revolver | Nitro (Well-Worn)",
+                    "commodity":0
+                },
+                "sale_price_text":"$0.42"
+            },
+            {
+                "name":"M4A4 | Faded Zebra (Battle-Scarred)","hash_name":"M4A4 | Faded Zebra (Battle-Scarred)","sell_listings":93,"sell_price":336,"sell_price_text":"$3.36","app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg","app_name":"Counter-Strike 2","asset_description":{"appid":730,"classid":"310777345","instanceid":"188530139","background_color":"","icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhzw8zSdD9Q7d-3mb-JgMj8NrrHjyVTvZZw3LCS8N6h2FXt-kU4Yz-gdofAcAdoN1_T-lboxLy70Ja4tJib1zI97bGHVUU7","tradable":1,"name":"M4A4 | Faded Zebra (Battle-Scarred)","name_color":"D2D2D2","type":"Mil-Spec Grade Rifle","market_name":"M4A4 | Faded Zebra (Battle-Scarred)","market_hash_name":"M4A4 | Faded Zebra (Battle-Scarred)","commodity":0},"sale_price_text":"$3.22"},{"name":"R8 Revolver | Phoenix Marker (Field-Tested)","hash_name":"R8 Revolver | Phoenix Marker (Field-Tested)","sell_listings":41,"sell_price":215,"sell_price_text":"$2.15","app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg","app_name":"Counter-Strike 2","asset_description":{"appid":730,"classid":"4141780692","instanceid":"519977179","background_color":"","icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopL-zJAt21uH3cDB9_NS5kY6Cj8jgMrzCqWld_cBOh-zF_Jn4xgLsqkc5ZDqmIICQcw45MAvWqAXqwOrn18fo6ZzBn3Ywu3IjtnnelxWpwUYbsGyx8h8","tradable":1,"name":"R8 Revolver | Phoenix Marker (Field-Tested)","name_color":"D2D2D2","type":"Industrial Grade Pistol","market_name":"R8 Revolver | Phoenix Marker (Field-Tested)","market_hash_name":"R8 Revolver | Phoenix Marker (Field-Tested)","commodity":0},"sale_price_text":"$2.06"},{"name":"StatTrak™ M4A1-S | Decimator (Field-Tested)","hash_name":"StatTrak™ M4A1-S | Decimator (Field-Tested)","sell_listings":88,"sell_price":2899,"sell_price_text":"$28.99","app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg","app_name":"Counter-Strike 2","asset_description":{"appid":730,"classid":"2220090827","instanceid":"188581470","background_color":"","icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uOxh7-Gw_alDL_UlWJc6dF-mNbM8Ij8nVn6rUZpZj_7ddfGIFA9YFqG_1S4yLjujZbv78_PynYy63Yr7XiJzRG1gAYMMLJRV2t2dw","tradable":1,"name":"StatTrak™ M4A1-S | Decimator (Field-Tested)","name_color":"CF6A32","type":"StatTrak™ Classified Rifle","market_name":"StatTrak™ M4A1-S | Decimator (Field-Tested)","market_hash_name":"StatTrak™ M4A1-S | Decimator (Field-Tested)","commodity":0},"sale_price_text":"$27.73"},{"name":"StatTrak™ Sawed-Off | Limelight (Factory New)","hash_name":"StatTrak™ Sawed-Off | Limelight (Factory New)","sell_listings":34,"sell_price":590,"sell_price_text":"$5.90","app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg","app_name":"Counter-Strike 2","asset_description":{"appid":730,"classid":"5719825609","instanceid":"902658099","background_color":"","icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbuyLgNv1fX3cih9_92hkYS0mPHyDLfYm25u5Mx2gv2P89nx3FHlrUo5YGz3cNeddQA2MwvR8lm9xOjogpG1tMydnyQ17ih35GGdwUKsyVz6-Q","tradable":1,"name":"StatTrak™ Sawed-Off | Limelight (Factory New)","name_color":"CF6A32","type":"StatTrak™ Restricted Shotgun","market_name":"StatTrak™ Sawed-Off | Limelight (Factory New)","market_hash_name":"StatTrak™ Sawed-Off | Limelight (Factory New)","commodity":0},"sale_price_text":"$5.65"},{"name":"StatTrak™ PP-Bizon | Osiris (Factory New)","hash_name":"StatTrak™ PP-Bizon | Osiris (Factory New)","sell_listings":173,"sell_price":540,"sell_price_text":"$5.40","app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg","app_name":"Counter-Strike 2","asset_description":{"appid":730,"classid":"520029918","instanceid":"188530170","background_color":"","icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotLO_JAlf0Ob3czRY49L7m5OChf7nDLfYkWNFppUg3LDE8dn32lXnrUFtZDr2d4eVcQc2NFCB-1O7x-zrgZPutJjInCN9-n51f6OV_es","tradable":1,"name":"StatTrak™ PP-Bizon | Osiris (Factory New)","name_color":"CF6A32","type":"StatTrak™ Restricted SMG","market_name":"StatTrak™ PP-Bizon | Osiris (Factory New)","market_hash_name":"StatTrak™ PP-Bizon | Osiris (Factory New)","commodity":0},"sale_price_text":"$5.17"},{"name":"StatTrak™ M249 | Downtown (Factory New)","hash_name":"StatTrak™ M249 | Downtown (Factory New)","sell_listings":98,"sell_price":460,"sell_price_text":"$4.60","app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg","app_name":"Counter-Strike 2","asset_description":{"appid":730,"classid":"5722505912","instanceid":"902658099","background_color":"","icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-jxcjhjxszFI2kb09i5g46dmOPxDLfYkWNFppEk076X9tnz2lHk_kNkYDv7IdfAdQU-aAvU8wO4xee90cDpv8nPyHF9-n51GKKViQM","tradable":1,"name":"StatTrak™ M249 | Downtown (Factory New)","name_color":"CF6A32","type":"StatTrak™ Restricted Machinegun","market_name":"StatTrak™ M249 | Downtown (Factory New)","market_hash_name":"StatTrak™ M249 | Downtown (Factory New)","commodity":0},"sale_price_text":"$4.40"},{"name":"M249 | Midnight Palm (Field-Tested)","hash_name":"M249 | Midnight Palm (Field-Tested)","sell_listings":50,"sell_price":440,"sell_price_text":"$4.40","app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg","app_name":"Counter-Strike 2","asset_description":{"appid":730,"classid":"4571593358","instanceid":"519977179","background_color":"","icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-jxcjhzw8zYcDFP09K_k4ifqPrxN7LEmyUJupF1i7qTrNz33gGw-0VqazvxctfAIVc4Mg3VqwO3kLvrjJC46c7J1zI97deJbzI1","tradable":1,"name":"M249 | Midnight Palm (Field-Tested)","name_color":"D2D2D2","type":"Industrial Grade Machinegun","market_name":"M249 | Midnight Palm (Field-Tested)","market_hash_name":"M249 | Midnight Palm (Field-Tested)","commodity":0},"sale_price_text":"$4.21"},{"name":"MP9 | Old Roots (Minimal Wear)","hash_name":"MP9 | Old Roots (Minimal Wear)","sell_listings":49,"sell_price":425,"sell_price_text":"$4.25","app_icon":"https:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/730\/8dbc71957312bbd3baea65848b545be9eae2a355.jpg","app_name":"Counter-Strike 2","asset_description":{"appid":730,"classid":"4571594258","instanceid":"519977179","background_color":"","icon_url":"-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6r8FBRw7P7HYzJ9792kgomFkMjtNrfdmXxu5Mx2gv2PpI703gOw-RdoZG3wJYOQcg47ZV7UqFi-k-q9gZG1u8zOynMyu3Qh42GdwULfP9RNEA","tradable":1,"name":"MP9 | Old Roots (Minimal Wear)","name_color":"D2D2D2","type":"Industrial Grade SMG","market_name":"MP9 | Old Roots (Minimal Wear)","market_hash_name":"MP9 | Old Roots (Minimal Wear)","commodity":0},"sale_price_text":"$4.07"}]}
