@@ -34,7 +34,8 @@ inSkin = [novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, 
 //console.log(outSkins);
 //console.log(outWears);
 
-singleCollectionTradeups('Blacksite Collection');
+//singleCollectionTradeups('Blacksite Collection');
+retrievePrice("https://steamcommunity.com/market/listings/730/Zeus x27 | Olympus (Factory New)");
 
 // to retrieve all items once, with 5 second delay between items, it'll take a little under 3 hours
 // I think that the delay can be as little as 3 seconds, which would take a little under 2 hours
@@ -191,7 +192,7 @@ function calculateWearTarget(outputSkin, targetWear) {
 // retrieves the median price of a skin from the steam market based on the buy orders
 // url format: `https://steamcommunity.com/market/listings/730/${weapon} | ${skin} (${wear})`
 // url example: https://steamcommunity.com/market/listings/730/Zeus x27 | Olympus (Factory New)
-async function retrievePrice(url) {
+async function retrievePrice(url, attemptCount = 0) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
@@ -200,13 +201,12 @@ async function retrievePrice(url) {
     const buyPrices = await page.evaluate(() => {
         return Array.from(document.querySelectorAll("#market_commodity_buyreqeusts_table > table > tbody > tr > td:nth-child(1)")).map(x => x.textContent);
     });
-    let attemptCount = 1;
-    if (buyPrices.length < 1 && attemptCount < 5) {
-        attemptCount++;
+    attemptCount++;
+    if (buyPrices.length < 1 && attemptCount < 3) {
         console.log("No buy prices found, retrying in 5 seconds");
         await setTimeout(5000);
-        console.log("Retrieving price...");
-        return retrievePrice(url);
+        console.log("Retrieving price... " + attemptCount);
+        return retrievePrice(url, attemptCount);
     } else if (attemptCount >= 5) {
         console.log("No buy price found, giving up");
         return -1;
