@@ -47,7 +47,7 @@ function singleQualityTradeups() {
     // combine tradeups across all collections, but only with skins from a single quality
 }
 
-function singleCollectionTradeups(collection) {
+async function singleCollectionTradeups(collection) {
     // with given collection name, calculate profitable tradeups within the single collection
     // start by gathering the price and target wear of all wear jumps of every highest tier item (skins[collection].length-1)
     let wears = ['Battle-Scarred', 'Well-Worn', 'Field-Tested', 'Minimal Wear', 'Factory New'];
@@ -67,7 +67,7 @@ function singleCollectionTradeups(collection) {
             let skinGroup = [];
             for (const wear of wears) {
                 let link = `https://steamcommunity.com/market/listings/730/${currentSkin.weapon} | ${currentSkin.skin} (${wear})`;
-                let price = retrievePrice(link);
+                let price = await retrievePrice(link);
                 requestCount++;
                 skinGroup.push(price);
             }
