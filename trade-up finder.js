@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 const { setTimeout } = require('timers/promises');
 const skins = require('./cs2_skins_database.json');
 
+var requestCount = 0;
 // console.log(skins['Kilowatt Case'].Classified[1]);
 
 // let weapon = skins['Kilowatt Case'].Classified[1].weapon;
@@ -29,10 +30,11 @@ let scarEnforcer = {
 // 9x Nova Gila, 1x SCAR-20 Enforcer, all 0.09 wear
 // expected output: 0.045 mecha industries, 0.0675 shallow grave, 0.063 wasteland princess, 0.0585 phantom disruptor, 0.09 disco tech, 0.09 justice
 inSkin = [novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, scarEnforcer];
+//let outSkins, outWears = calculateOutcome(inSkin);
+//console.log(outSkins);
+//console.log(outWears);
 
-let outSkins, outWears = calculateOutcome(inSkin);
-console.log(outSkins);
-console.log(outWears);
+singleCollectionTradeups('Blacksite Collection');
 
 // to retrieve all items once, with 5 second delay between items, it'll take a little under 3 hours
 // I think that the delay can be as little as 3 seconds, which would take a little under 2 hours
@@ -48,7 +50,33 @@ function singleQualityTradeups() {
 function singleCollectionTradeups(collection) {
     // with given collection name, calculate profitable tradeups within the single collection
     // start by gathering the price and target wear of all wear jumps of every highest tier item (skins[collection].length-1)
-    
+    let wears = ['Battle-Scarred', 'Well-Worn', 'Field-Tested', 'Minimal Wear', 'Factory New'];
+    let collectionSkins = [];
+    for (const grade in skins[collection]) {
+        let gradeGroup = [];
+        for (const skin of skins[collection][grade]) {
+            gradeGroup.push(skin);
+        }
+        collectionSkins.push(gradeGroup);
+    }
+
+    let collectionPrices = [];
+    for (const grade of collectionSkins) {
+        let gradeGroup = [];
+        for (const currentSkin of grade) {
+            let skinGroup = [];
+            for (const wear of wears) {
+                let link = `https://steamcommunity.com/market/listings/730/${currentSkin.weapon} | ${currentSkin.skin} (${wear})`;
+                let price = retrievePrice(link);
+                requestCount++;
+                skinGroup.push(price);
+            }
+            gradeGroup.push(skinGroup);
+        }
+        collectionPrices.push(gradeGroup);
+    }
+
+    console.log(collectionPrices);
     // then find the price and target wear, etc. of the second highest tier item
     // if 10*price < avgUpTierProfit, log it as a profitable tradeup and calculate profit and chance of profit for each item
 
@@ -201,3 +229,5 @@ async function retrievePrice(url) {
 
     return medianPrice;
 }
+
+console.log("number of requests: " + requestCount);
