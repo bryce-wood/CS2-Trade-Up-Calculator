@@ -67,7 +67,7 @@ async function singleCollectionTradeups(collection) {
             let skinGroup = [];
             for (const wear of wears) {
                 let link = `https://steamcommunity.com/market/listings/730/${currentSkin.weapon} | ${currentSkin.skin} (${wear})`;
-                let price = await retrievePrice(link);
+                let price = await retrievePrice(link); // can be extremely optimized with proxies
                 requestCount++;
                 skinGroup.push(price);
             }
@@ -200,12 +200,16 @@ async function retrievePrice(url) {
     const buyPrices = await page.evaluate(() => {
         return Array.from(document.querySelectorAll("#market_commodity_buyreqeusts_table > table > tbody > tr > td:nth-child(1)")).map(x => x.textContent);
     });
-
-    if (buyPrices.length < 1) {
+    let attemptCount = 1;
+    if (buyPrices.length < 1 && attemptCount < 5) {
+        attemptCount++;
         console.log("No buy prices found, retrying in 5 seconds");
         await setTimeout(5000);
         console.log("Retrieving price...");
         return retrievePrice(url);
+    } else if (attemptCount >= 5) {
+        console.log("No buy price found, giving up");
+        return -1;
     }
 
     const buyQuantities = await page.evaluate(() => {
