@@ -34,8 +34,7 @@ inSkin = [novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, 
 //console.log(outSkins);
 //console.log(outWears);
 
-//singleCollectionTradeups('Blacksite Collection');
-retrievePrice("https://steamcommunity.com/market/listings/730/Zeus x27 | Olympus (Factory New)");
+singleCollectionTradeups('Kilowatt Case');
 
 // to retrieve all items once, with 5 second delay between items, it'll take a little under 3 hours
 // I think that the delay can be as little as 3 seconds, which would take a little under 2 hours
@@ -67,7 +66,9 @@ async function singleCollectionTradeups(collection) {
         for (const currentSkin of grade) {
             let skinGroup = [];
             for (const wear of wears) {
+                // if skin cannot be x wear, dont search for it
                 let link = `https://steamcommunity.com/market/listings/730/${currentSkin.weapon} | ${currentSkin.skin} (${wear})`;
+                console.log(link);
                 let price = await retrievePrice(link); // can be extremely optimized with proxies
                 requestCount++;
                 skinGroup.push(price);
@@ -83,6 +84,7 @@ async function singleCollectionTradeups(collection) {
 
     // repeat down to the lowest tier (will prob want a for loop)
 
+    return 0;
 }
 
 // given 10 "inputSkins" calculate the probability and wear of each skin from the trade-up
@@ -192,22 +194,26 @@ function calculateWearTarget(outputSkin, targetWear) {
 // retrieves the median price of a skin from the steam market based on the buy orders
 // url format: `https://steamcommunity.com/market/listings/730/${weapon} | ${skin} (${wear})`
 // url example: https://steamcommunity.com/market/listings/730/Zeus x27 | Olympus (Factory New)
-async function retrievePrice(url, attemptCount = 0) {
+async function retrievePrice(url) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
     await page.goto(url);
 
-    const buyPrices = await page.evaluate(() => {
+    let buyPrices = await page.evaluate(() => {
         return Array.from(document.querySelectorAll("#market_commodity_buyreqeusts_table > table > tbody > tr > td:nth-child(1)")).map(x => x.textContent);
     });
-    attemptCount++;
-    if (buyPrices.length < 1 && attemptCount < 3) {
+    let attemptCount = 1;
+    while (buyPrices.length < 1 && attemptCount < 3) {
         console.log("No buy prices found, retrying in 5 seconds");
         await setTimeout(5000);
         console.log("Retrieving price... " + attemptCount);
-        return retrievePrice(url, attemptCount);
-    } else if (attemptCount >= 5) {
+        buyPrices = await page.evaluate(() => {
+            return Array.from(document.querySelectorAll("#market_commodity_buyreqeusts_table > table > tbody > tr > td:nth-child(1)")).map(x => x.textContent);
+        });
+        attemptCount++;
+    }
+    if (attemptCount >= 3 || buyPrices.length < 1) {
         console.log("No buy price found, giving up");
         return -1;
     }
@@ -218,8 +224,8 @@ async function retrievePrice(url, attemptCount = 0) {
     
     await browser.close();
 
-    console.log(buyPrices);
-    console.log(buyQuantities);
+    //console.log(buyPrices);
+    //console.log(buyQuantities);
     let ordersIllustrated = [];
     
     for (let i = 0; i < buyQuantities.length-1; i++) {
@@ -234,4 +240,4 @@ async function retrievePrice(url, attemptCount = 0) {
     return medianPrice;
 }
 
-console.log("number of requests: " + requestCount);
+//console.log("number of requests: " + requestCount);
