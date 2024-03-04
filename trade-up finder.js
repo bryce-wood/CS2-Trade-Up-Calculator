@@ -79,7 +79,21 @@ async function singleCollectionTradeups(collection) {
     }
 
     console.log(collectionPrices);
-    // then find the price and target wear, etc. of the second highest tier item
+    // clean up prices
+    for (let i = 0; i < collectionPrices.length; i++) {
+        for (let j = 0; j < collectionPrices[i].length; j++) {
+            for (let k = 0; k < collectionPrices[i][j].length; k++) {
+                if (!(typeof collectionPrices[i][j][k] === "number" )) {
+                    // if not a number (-1) then must be in the format $X.XX
+                    // remove dollar sign and parse float
+                    collectionPrices[i][j][k] = parseFloat(collectionPrices[i][j][k].substring(1));
+                }
+            }
+        }
+    }
+
+    // for each grade in the collection find the max, min, and average price
+    
     // if 10*price < avgUpTierProfit, log it as a profitable tradeup and calculate profit and chance of profit for each item
 
     // repeat down to the lowest tier (will prob want a for loop)
