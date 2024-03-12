@@ -1,0 +1,1897 @@
+{
+  "Anubis Collection": {
+    "Consumer Grade": [
+      { "weapon": "R8 Revolver", "skin": "Inlay", "min_wear": 0, "max_wear": 0.76 },
+      { "weapon": "M249", "skin": "Submerged", "min_wear": 0.02, "max_wear": 0.8 },
+      { "weapon": "XM1014", "skin": "Hieroglyph", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP7", "skin": "Sunbaked", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AUG", "skin": "Snake Pit", "min_wear": 0, "max_wear": 0.55 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "M4A1-S", "skin": "Mud-Spec", "min_wear": 0, "max_wear": 0.73 },
+      { "weapon": "SSG 08", "skin": "Azure Glyph", "min_wear": 0.01, "max_wear": 0.99 },
+      { "weapon": "USP-S", "skin": "Desert Tactical", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAC-10", "skin": "Echoing Sands", "min_wear": 0.02, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "Tec-9", "skin": "Mummy's Rot", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AK-47", "skin": "Steel Delta", "min_wear": 0, "max_wear": 0.73 },
+      { "weapon": "AWP", "skin": "Black Nile", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "MAG-7", "skin": "Copper Coated", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "Glock-18", "skin": "Ramese's Reach", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Nova", "skin": "Sobek's Bite", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "ScaraB Rush", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "FAMAS", "skin": "Waters of Nephthys", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "P250", "skin": "Apep's Curse", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [{ "weapon": "M4A4", "skin": "Eye of Horus", "min_wear": 0, "max_wear": 0.7 }]
+  },
+  "Ancient Collection": {
+    "Consumer Grade": [
+      { "weapon": "Nova", "skin": "Army Sheen", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "SG 553", "skin": "Lush Ruins", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "P90", "skin": "Ancient Earth", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "SSG 08", "skin": "Jungle Dashed", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "R8 Revolver", "skin": "Night", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "MP7", "skin": "Tall Grass", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "P2000", "skin": "Panther Camo", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "G3SG1", "skin": "Ancient Ritual", "min_wear": 0, "max_wear": 0.76 },
+      { "weapon": "CZ75-Auto", "skin": "Silver", "min_wear": 0, "max_wear": 0.08 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "FAMAS", "skin": "Dark Water", "min_wear": 0.1, "max_wear": 0.26 },
+      { "weapon": "Galil AR", "skin": "Dusk Ruins", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "AUG", "skin": "Carved Jade", "min_wear": 0, "max_wear": 0.2 },
+      { "weapon": "Tec-9", "skin": "Blast From the Past", "min_wear": 0, "max_wear": 0.65 }
+    ],
+    "Restricted": [
+      { "weapon": "XM1014", "skin": "Ancient Lore", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "MAC-10", "skin": "Gold Brick", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "USP-S", "skin": "Ancient Visions", "min_wear": 0, "max_wear": 0.45 }
+    ],
+    "Classified": [
+      { "weapon": "P90", "skin": "Run and Hide", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AK-47", "skin": "Panthera onca", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [{ "weapon": "M4A1-S", "skin": "Welcome to the Jungle", "min_wear": 0, "max_wear": 1 }]
+  },
+  "Assault Collection": {
+    "Consumer Grade": [
+      { "weapon": "SG 553", "skin": "Tornado", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "UMP-45", "skin": "Caramel", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [{ "weapon": "Five-SeveN", "skin": "Candy Apple ", "min_wear": 0, "max_wear": 0.3 }],
+    "Mil-Spec": [
+      { "weapon": "AUG", "skin": "Hot Rod", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "Negev", "skin": "Anodized Navy", "min_wear": 0, "max_wear": 0.08 }
+    ],
+    "Restricted": [
+      { "weapon": "MP9", "skin": "Bulldozer", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Glock-18", "skin": "Fade", "min_wear": 0, "max_wear": 0.08 }
+    ]
+  },
+  "Aztec Collection": {
+    "Consumer Grade": [
+      { "weapon": "Nova", "skin": "Forest Leaves", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Five-SeveN", "skin": "Jungle", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SSG 08", "skin": "Lichen Dashed", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "AK-47", "skin": "Jungle Spray", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "M4A4", "skin": "Jungle Tiger", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [{ "weapon": "Tec-9", "skin": "Ossified", "min_wear": 0, "max_wear": 0.08 }]
+  },
+  "Baggage Collection": {
+    "Consumer Grade": [
+      { "weapon": "G3SG1", "skin": "Contractor", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP7", "skin": "Olive Plaid", "min_wear": 0, "max_wear": 0.58 },
+      { "weapon": "CZ75-Auto", "skin": "Green Plaid", "min_wear": 0, "max_wear": 0.58 },
+      { "weapon": "MP9", "skin": "Green Plaid", "min_wear": 0, "max_wear": 0.58 },
+      { "weapon": "SSG 08", "skin": "Sand Dune", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "SG 553", "skin": "Traveler", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "Leather", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAC-10", "skin": "Commuter", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P2000", "skin": "Coach Class", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "Sawed-Off", "skin": "First Class", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "USP-S", "skin": "Business Class", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "XM1014", "skin": "Red Leather", "min_wear": 0, "max_wear": 0.56 }
+    ],
+    "Restricted": [
+      { "weapon": "AK-47", "skin": "First Class", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Desert Eagle", "skin": "Pilot", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [{ "weapon": "AK-47", "skin": "Jet Set", "min_wear": 0, "max_wear": 1 }]
+  },
+  "Bank Collection": {
+    "Consumer Grade": [
+      { "weapon": "Tec-9", "skin": "Urban DDPAT", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SG 553", "skin": "Army Sheen", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "Sawed-Off", "skin": "Forest DDPAT", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Negev", "skin": "Army Sheen", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "MP7", "skin": "Forest DDPAT", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "R8 Revolver", "skin": "Bone Mask", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "UMP-45", "skin": "Carbon Fiber", "min_wear": 0, "max_wear": 0.12 },
+      { "weapon": "Nova", "skin": "Caged Steel", "min_wear": 0, "max_wear": 0.2 },
+      { "weapon": "MAC-10", "skin": "Silver", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "Glock-18", "skin": "Death Rattle", "min_wear": 0.08, "max_wear": 0.5 },
+      { "weapon": "G3SG1", "skin": "Green Apple", "min_wear": 0, "max_wear": 0.3 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "Galil AR", "skin": "Tuxedo", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Desert Eagle", "skin": "Meteorite", "min_wear": 0, "max_wear": 0.18 },
+      { "weapon": "CZ75-Auto", "skin": "Tuxedo", "min_wear": 0, "max_wear": 0.8 }
+    ],
+    "Restricted": [{ "weapon": "AK-47", "skin": "Emerald Pinstripe", "min_wear": 0, "max_wear": 1 }],
+    "Classified": [{ "weapon": "P250", "skin": "Franklin", "min_wear": 0, "max_wear": 0.4 }]
+  },
+  "Blacksite Collection": { "Restricted": [{ "weapon": "MP5-SD", "skin": "Lab Rats", "min_wear": 0, "max_wear": 0.35 }] },
+  "Cache Collection": {
+    "Industrial Grade": [
+      { "weapon": "Negev", "skin": "Nuclear Waste", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "P250", "skin": "Contamination", "min_wear": 0, "max_wear": 0.83 },
+      { "weapon": "AUG", "skin": "Radiation Hazard", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "PP-Bizon", "skin": "Chemical Green", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "SG 553", "skin": "Fallout Warning", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Five-SeveN", "skin": "Hot Shot", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "Glock-18", "skin": "Reactor", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP9", "skin": "Setting Sun", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "XM1014", "skin": "Bone Machine", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "MAC-10", "skin": "Nuclear Garden", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Tec-9", "skin": "Toxic", "min_wear": 0, "max_wear": 0.7 }
+    ],
+    "Restricted": [
+      { "weapon": "FAMAS", "skin": "Styx", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Galil AR", "skin": "Cerberus", "min_wear": 0, "max_wear": 0.9 }
+    ]
+  },
+  "Canals Collection": {
+    "Consumer Grade": [
+      { "weapon": "CZ75-Auto", "skin": "Indigo", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AUG", "skin": "Navy Murano", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "R8 Revolver", "skin": "Canal Spray", "min_wear": 0.06, "max_wear": 0.6 },
+      { "weapon": "Negev", "skin": "Boroque Sand", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SCAR-20", "skin": "Stone Mosaico", "min_wear": 0.06, "max_wear": 0.5 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "AK-47", "skin": "Baroque Purple", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Candy Apple", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Tec-9", "skin": "Orange Murano", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P250", "skin": "Dark Filigree", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "Dual Berettas", "skin": "Emerald", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "P90", "skin": "Baroque Red", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "SSG 08", "skin": "Orange Filigree", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "G3SG1", "skin": "Violet Murano", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Restricted": [
+      { "weapon": "MAC-10", "skin": "Red Filigree", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Nova", "skin": "Baroque Orange", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "MP9", "skin": "Stained Glass", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Classified": [{ "weapon": "MAG-7", "skin": "Cinquedea", "min_wear": 0, "max_wear": 1 }],
+    "Covert": [{ "weapon": "AWP", "skin": "The Prince", "min_wear": 0, "max_wear": 0.6 }]
+  },
+  "Chop Shop Collection": {
+    "Consumer Grade": [
+      { "weapon": "CZ75-Auto", "skin": "Army Sheen", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "M249", "skin": "Impact Drill", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAG-7", "skin": "Seabird", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SCAR-20", "skin": "Army Sheen", "min_wear": 0, "max_wear": 0.3 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "USP-S", "skin": "Para Green", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Galil AR", "skin": "Urban Rubble", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Desert Eagle", "skin": "Night", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "MP7", "skin": "Full Stop", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "CZ75-Auto", "skin": "Emerald", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "Five-SeveN", "skin": "Nitro", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MAC-10", "skin": "Fade", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "P250", "skin": "Whiteout", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Restricted": [
+      { "weapon": "Dual Berettas", "skin": "Duelist", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Bulldozer", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Classified": [
+      { "weapon": "Glock-18", "skin": "Twilight Galaxy", "min_wear": 0, "max_wear": 0.2 },
+      { "weapon": "M4A1-S", "skin": "Hot Rod", "min_wear": 0, "max_wear": 0.08 }
+    ]
+  },
+  "Cobblestone Collection": {
+    "Consumer Grade": [
+      { "weapon": "P90", "skin": "Storm", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "UMP-45", "skin": "Indigo", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MAC-10", "skin": "Indigo", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SCAR-20", "skin": "Storm", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Dual Berettas", "skin": "Briar", "min_wear": 0, "max_wear": 0.22 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "USP-S", "skin": "Royal Blue", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Nova", "skin": "Green Apple", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "MAG-7", "skin": "Silver", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "Sawed-Off", "skin": "Rust Coat", "min_wear": 0, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "P2000", "skin": "Chainmail", "min_wear": 0, "max_wear": 0.22 },
+      { "weapon": "MP9", "skin": "Dark Age", "min_wear": 0, "max_wear": 0.22 }
+    ],
+    "Restricted": [
+      { "weapon": "Desert Eagle", "skin": "Hand Cannon", "min_wear": 0.01, "max_wear": 0.7 },
+      { "weapon": "CZ75-Auto", "skin": "Chalice", "min_wear": 0, "max_wear": 0.1 }
+    ],
+    "Classified": [{ "weapon": "M4A1-S", "skin": "Knight", "min_wear": 0, "max_wear": 0.1 }],
+    "Covert": [{ "weapon": "AWP", "skin": "Dragon Lore", "min_wear": 0, "max_wear": 0.7 }]
+  },
+  "Dust Collection": {
+    "Industrial Grade": [
+      { "weapon": "M4A4", "skin": "Desert Storm", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SCAR-20", "skin": "Palm", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AK-47", "skin": "Predator", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "AWP", "skin": "Snake Camo", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AUG", "skin": "Copperhead", "min_wear": 0.12, "max_wear": 0.38 },
+      { "weapon": "Sawed-Off", "skin": "Copper", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "Desert Eagle", "skin": "Blaze", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "P2000", "skin": "Scorpion", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "Glock-18", "skin": "Brass", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Dust II Collection": {
+    "Consumer Grade": [
+      { "weapon": "Nova", "skin": "Predator", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP9", "skin": "Sand Dashed", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P90", "skin": "Sand Spray", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SCAR-20", "skin": "Sand Mesh", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P250", "skin": "Sand Dune", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "G3SG1", "skin": "Desert Storm", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "Tec-9", "skin": "VariCamo", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "MAC-10", "skin": "Palm", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Five-SeveN", "skin": "Orange Peel", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AK-47", "skin": "Safari Mesh", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Sawed-Off", "skin": "Snake Camo", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "M4A1-S", "skin": "VariCamo", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "PP-Bizon", "skin": "Brass", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Damascus Steel", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [{ "weapon": "P2000", "skin": "Amber Fade", "min_wear": 0, "max_wear": 0.4 }],
+    "Classified": [{ "weapon": "R8 Revolver", "skin": "Amber Fade", "min_wear": 0, "max_wear": 0.4 }]
+  },
+  "2021 Dust II Collection": {
+    "Consumer Grade": [
+      { "weapon": "MP7", "skin": "Prey", "min_wear": 0, "max_wear": 0.48 },
+      { "weapon": "SG 553", "skin": "Bleached", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "R8 Revolver", "skin": "Desert Brush", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "P90", "skin": "Desert DDPAT", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Sawed-Off", "skin": "Parched", "min_wear": 0, "max_wear": 0.49 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "Five-SeveN", "skin": "Withered Vine", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "AUG", "skin": "Spalted Wood", "min_wear": 0, "max_wear": 0.48 },
+      { "weapon": "MP9", "skin": "Old Roots", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "M249", "skin": "Midnight Palm", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "G3SG1", "skin": "New Roots", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "Nova", "skin": "Quick Sand", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P250", "skin": "Black & Tan", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Galil AR", "skin": "Amber Fade", "min_wear": 0, "max_wear": 0.4 }
+    ],
+    "Restricted": [
+      { "weapon": "USP-S", "skin": "Orange Anolis", "min_wear": 0, "max_wear": 0.37 },
+      { "weapon": "MAC-10", "skin": "Case Hardened", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "M4A4", "skin": "Red DDPAT", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Classified": [
+      { "weapon": "SSG 08", "skin": "Death Strike", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "UMP-45", "skin": "Fade", "min_wear": 0, "max_wear": 0.08 }
+    ],
+    "Covert": [{ "weapon": "AK-47", "skin": "Gold Arabesque", "min_wear": 0, "max_wear": 0.7 }]
+  },
+  "Gods and Monsters Collection": {
+    "Consumer Grade": [
+      { "weapon": "AUG", "skin": "Daedalus", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "Dual Berettas", "skin": "Moon in Libra", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "MP7", "skin": "Asterion", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "Nova", "skin": "Moon in Libra", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "Tec-9", "skin": "Hades", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P2000", "skin": "Pathfinder", "min_wear": 0, "max_wear": 0.35 },
+      { "weapon": "M249", "skin": "Shipping Forecast", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "AWP", "skin": "Sun in Leo", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "MP9", "skin": "Pandora's Box", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "UMP-45", "skin": "Minotaur's Labyrinth", "min_wear": 0, "max_wear": 0.39 }
+    ],
+    "Restricted": [
+      { "weapon": "G3SG1", "skin": "Chronos", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "M4A1-S", "skin": "Icarus Fell", "min_wear": 0, "max_wear": 0.1 }
+    ],
+    "Classified": [{ "weapon": "M4A4", "skin": "Poseidon", "min_wear": 0, "max_wear": 0.33 }],
+    "Covert": [{ "weapon": "AWP", "skin": "Medusa", "min_wear": 0, "max_wear": 1 }]
+  },
+  "Havoc Collection": {
+    "Consumer Grade": [
+      { "weapon": "PP-Bizon", "skin": "Death Rattle", "min_wear": 0.08, "max_wear": 0.5 },
+      { "weapon": "Sawed-Off", "skin": "Clay Ambush", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Tec-9", "skin": "Phoenix Chalk", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Dual Berettas", "skin": "Heist", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "M249", "skin": "Predator", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "Nova", "skin": "Rust Coat", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "MP7", "skin": "Vault Heist", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "UMP-45", "skin": "Houndstooth", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "R8 Revolver", "skin": "Phoenix Marker", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "Negev", "skin": "Phoenix Stencil", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "Desert Eagle", "skin": "Night Heist", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "P90", "skin": "Tiger Pit", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P250", "skin": "Bengal Tiger", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Restricted": [
+      { "weapon": "Glock-18", "skin": "Franklin", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "Galil AR", "skin": "Phoenix Blacklight", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "SG 553", "skin": "Hypnotic", "min_wear": 0, "max_wear": 0.08 }
+    ],
+    "Classified": [
+      { "weapon": "AWP", "skin": "Silk Tiger", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "MAC-10", "skin": "Hot Snakes", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [{ "weapon": "AK-47", "skin": "X-Ray", "min_wear": 0, "max_wear": 1 }]
+  },
+  "Inferno Collection": {
+    "Consumer Grade": [
+      { "weapon": "MAG-7", "skin": "Sand Dune", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Nova", "skin": "Walnut", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "P250", "skin": "Gunsmoke", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "M4A4", "skin": "Tornado", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "Dual Berettas", "skin": "Anodized Navy", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "Tec-9", "skin": "Brass", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "2018 Inferno Collection": {
+    "Consumer Grade": [
+      { "weapon": "MAG-7", "skin": "Rust Coat", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AUG", "skin": "Sweeper", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "UMP-45", "skin": "Mudder", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP9", "skin": "Slide", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP5-SD", "skin": "Dirt Drop", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "PP-Bizon", "skin": "Candy Apple", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "MAC-10", "skin": "Calf Skin", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "R8 Revolver", "skin": "Nitro", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Glock-18", "skin": "High Beam", "min_wear": 0, "max_wear": 0.08 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "Sawed-Off", "skin": "Brake Light", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "M4A4", "skin": "Converter", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "USP-S", "skin": "Check Engine", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "SSG 08", "skin": "Hand Brake", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "P250", "skin": "Vino Primo", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP7", "skin": "Fade", "min_wear": 0, "max_wear": 0.25 },
+      { "weapon": "AK-47", "skin": "Safety Net", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Classified": [
+      { "weapon": "Dual Berettas", "skin": "Twin Turbo", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Integrale", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Italy Collection": {
+    "Consumer Grade": [
+      { "weapon": "PP-Bizon", "skin": "Sand Dashed", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Nova", "skin": "Sand Dune", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "FAMAS", "skin": "Colony", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AUG", "skin": "Contractor", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Tec-9", "skin": "Groundwater", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "Nova", "skin": "Candy Apple", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "Dual Berettas", "skin": "Stained", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P2000", "skin": "Granite Marbleized", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "UMP-45", "skin": "Gunsmoke", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "M4A1-S", "skin": "Boreal Forest", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "XM1014", "skin": "CaliCamo", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "MP7", "skin": "Anodized Navy", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "Glock-18", "skin": "Candy Apple", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "Sawed-Off", "skin": "Full Stop", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Restricted": [{ "weapon": "AWP", "skin": "Pit Viper", "min_wear": 0.08, "max_wear": 0.5 }]
+  },
+  "Lake Collection": {
+    "Consumer Grade": [
+      { "weapon": "G3SG1", "skin": "Jungle Dashed", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SG 553", "skin": "Waves Perforated", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Galil AR", "skin": "Sage Spray", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AUG", "skin": "Storm", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "XM1014", "skin": "Blue Spruce", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P250", "skin": "Boreal Forest", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "XM1014", "skin": "Blue Steel", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "FAMAS", "skin": "Cyanospatter", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "PP-Bizon", "skin": "Night Ops", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "AWP", "skin": "Safari Mesh", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Desert Eagle", "skin": "Mudder", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "SG 553", "skin": "Anodized Navy", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "P90", "skin": "Teardown", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "USP-S", "skin": "Night Ops", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Restricted": [{ "weapon": "Dual Berettas", "skin": "Cobalt Quartz", "min_wear": 0, "max_wear": 0.4 }]
+  },
+  "Militia Collection": {
+    "Consumer Grade": [
+      { "weapon": "XM1014", "skin": "Grassland", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MAC-10", "skin": "Tornado", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "PP-Bizon", "skin": "Forest Leaves", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [{ "weapon": "P2000", "skin": "Grassland Leaves ", "min_wear": 0.06, "max_wear": 0.8 }],
+    "Mil-Spec": [
+      { "weapon": "Nova", "skin": "Modern Hunter", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Nova", "skin": "Blaze Orange", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P250", "skin": "Modern Hunter", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "XM1014", "skin": "Blaze Orange", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "PP-Bizon", "skin": "Modern Hunter", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Restricted": [{ "weapon": "M4A4", "skin": "Modern Hunter ", "min_wear": 0.06, "max_wear": 0.8 }],
+    "Classified": [{ "weapon": "SCAR-20", "skin": "Splash Jam", "min_wear": 0.06, "max_wear": 0.8 }]
+  },
+  "Mirage Collection": {
+    "Consumer Grade": [
+      { "weapon": "Galil AR", "skin": "Hunting Blind", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "P90", "skin": "Scorched", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "G3SG1", "skin": "Safari Mesh", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AUG", "skin": "Colony", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Five-SeveN", "skin": "Contractor", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P250", "skin": "Bone Mask", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "MP7", "skin": "Orange Peel", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Glock-18", "skin": "Groundwater", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SG 553", "skin": "Gator Mesh", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "SSG 08", "skin": "Tropical Storm", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Negev", "skin": "CaliCamo", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "MP9", "skin": "Hot Rod", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "UMP-45", "skin": "Blaze", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "MAC-10", "skin": "Amber Fade", "min_wear": 0, "max_wear": 0.4 }
+    ],
+    "Restricted": [{ "weapon": "MAG-7", "skin": "Bulldozer", "min_wear": 0.06, "max_wear": 0.8 }]
+  },
+  "2021 Mirage Collection": {
+    "Consumer Grade": [
+      { "weapon": "PP-Bizon", "skin": "Anolis", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "MAG-7", "skin": "Navy Sheen", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "P250", "skin": "Drought", "min_wear": 0, "max_wear": 0.44 },
+      { "weapon": "SSG 08", "skin": "Prey", "min_wear": 0, "max_wear": 0.48 },
+      { "weapon": "MAC-10", "skin": "Sienna Damask", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "CZ75-Auto", "skin": "Midnight Palm", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P90", "skin": "Verdant Growth", "min_wear": 0, "max_wear": 0.47 },
+      { "weapon": "FAMAS", "skin": "CaliCamo", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Dual Berettas", "skin": "Drift Wood", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "M249", "skin": "Humidor", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "SG 553", "skin": "Desert Blossom", "min_wear": 0, "max_wear": 0.49 },
+      { "weapon": "MP9", "skin": "Music Box", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "USP-S", "skin": "Purple DDPAT", "min_wear": 0, "max_wear": 0.55 }
+    ],
+    "Restricted": [
+      { "weapon": "XM1014", "skin": "Elegant Vines", "min_wear": 0, "max_wear": 0.37 },
+      { "weapon": "AUG", "skin": "Sand Storm", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Glock-18", "skin": "Pink DDPAT", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Classified": [
+      { "weapon": "MP5-SD", "skin": "Oxide Oasis", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "Desert Eagle", "skin": "Fennec Fox", "min_wear": 0, "max_wear": 0.8 }
+    ],
+    "Covert": [{ "weapon": "AWP", "skin": "Desert Hydra", "min_wear": 0, "max_wear": 0.6 }]
+  },
+  "Norse Collection": {
+    "Consumer Grade": [
+      { "weapon": "FAMAS", "skin": "Night Borre", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "SG 553", "skin": "Barricade", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "Galil AR", "skin": "Tornado", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP7", "skin": "Scorched", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SSG 08", "skin": "Red Stone", "min_wear": 0.06, "max_wear": 0.5 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "MAG-7", "skin": "Chainmail", "min_wear": 0, "max_wear": 0.22 },
+      { "weapon": "USP-S", "skin": "Pathfinder", "min_wear": 0, "max_wear": 0.35 },
+      { "weapon": "Dual Berettas", "skin": "Pyre", "min_wear": 0.06, "max_wear": 0.55 },
+      { "weapon": "M4A1-S", "skin": "Moss Quartz", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "SCAR-20", "skin": "Brass", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "CZ75-Auto", "skin": "Emerald Quartz", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "MAC-10", "skin": "Copper Borre", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "XM1014", "skin": "Frost Borre", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Restricted": [
+      { "weapon": "Desert Eagle", "skin": "Emerald Jörmungandr", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P90", "skin": "Astral Jörmungandr", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "AUG", "skin": "Flame Jörmungandr", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Classified": [{ "weapon": "Negev", "skin": "Mjölnir", "min_wear": 0, "max_wear": 0.6 }],
+    "Covert": [{ "weapon": "AWP", "skin": "Gungnir", "min_wear": 0, "max_wear": 0.6 }]
+  },
+  "Nuke Collection": {
+    "Consumer Grade": [
+      { "weapon": "MAG-7", "skin": "Irradiated Alert", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Sawed-Off", "skin": "Irradiated Alert", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "PP-Bizon", "skin": "Irradiated Alert", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "P90", "skin": "Fallout Warning", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "UMP-45", "skin": "Fallout Warning", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "XM1014", "skin": "Fallout Warning", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [{ "weapon": "M4A4", "skin": "Radiation Hazard", "min_wear": 0.06, "max_wear": 0.8 }],
+    "Restricted": [
+      { "weapon": "P250", "skin": "Nuclear Threat", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Tec-9", "skin": "Nuclear Threat", "min_wear": 0.06, "max_wear": 0.8 }
+    ]
+  },
+  "2018 Nuke Collection": {
+    "Consumer Grade": [
+      { "weapon": "UMP-45", "skin": "Facility Dark", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Nova", "skin": "Mandrel", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P250", "skin": "Facility Draft", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Five-SeveN", "skin": "Coolant", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "PP-Bizon", "skin": "Facility Sketch", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "MP7", "skin": "Motherboard", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Negev", "skin": "Bulkhead", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "M4A4", "skin": "Mainframe", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Galil AR", "skin": "Cold Fusion", "min_wear": 0, "max_wear": 0.83 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "P90", "skin": "Facility Negative", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "AWP", "skin": "Acheron", "min_wear": 0, "max_wear": 0.83 },
+      { "weapon": "MP5-SD", "skin": "Co-Processor", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P250", "skin": "Exchanger", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Restricted": [
+      { "weapon": "MAG-7", "skin": "Core Breach", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Glock-18", "skin": "Nuclear Garden", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "AUG", "skin": "Random Access", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Classified": [
+      { "weapon": "Tec-9", "skin": "Remote Control", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "M4A1-S", "skin": "Control Panel", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Office Collection": {
+    "Consumer Grade": [{ "weapon": "FAMAS", "skin": "Contrast Spray", "min_wear": 0.06, "max_wear": 0.8 }],
+    "Industrial Grade": [
+      { "weapon": "Galil AR", "skin": "Winter Forest", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "G3SG1", "skin": "Arctic Camo", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "M249", "skin": "Blizzard Marbleized", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "P2000", "skin": "Silver", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "MP7", "skin": "Whiteout", "min_wear": 0.06, "max_wear": 0.8 }
+    ]
+  },
+  "Overpass Collection": {
+    "Consumer Grade": [
+      { "weapon": "Sawed-Off", "skin": "Sage Spray", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "UMP-45", "skin": "Scorched", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "M249", "skin": "Contrast Spray", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MAG-7", "skin": "Storm", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP9", "skin": "Storm", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "Desert Eagle", "skin": "Urban DDPAT", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP7", "skin": "Gunsmoke", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Glock-18", "skin": "Night", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P2000", "skin": "Grassland", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "CZ75-Auto", "skin": "Nitro", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SSG 08", "skin": "Detour", "min_wear": 0, "max_wear": 0.43 },
+      { "weapon": "XM1014", "skin": "VariCamo Blue", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Restricted": [
+      { "weapon": "AWP", "skin": "Pink DDPAT", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "USP-S", "skin": "Road Rash", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [{ "weapon": "M4A1-S", "skin": "Master Piece", "min_wear": 0, "max_wear": 1 }]
+  },
+  "Rising Sun Collection": {
+    "Consumer Grade": [
+      { "weapon": "G3SG1", "skin": "Orange Kimono", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Sawed-Off", "skin": "Bamboo Shadow", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "P250", "skin": "Mint Kimono", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "PP-Bizon", "skin": "Bamboo Print", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Tec-9", "skin": "Bamboo Forest", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "P250", "skin": "Crimson Kimono", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Desert Eagle", "skin": "Midnight Storm", "min_wear": 0, "max_wear": 0.75 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "MAG-7", "skin": "Counter Terrace", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "Tec-9", "skin": "Terrace", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Galil AR", "skin": "Aqua Terrace", "min_wear": 0, "max_wear": 0.7 }
+    ],
+    "Restricted": [
+      { "weapon": "Desert Eagle", "skin": "Sunset Storm 弐", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "Desert Eagle", "skin": "Sunset Storm 壱", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "Five-SeveN", "skin": "Neon Kimono", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "M4A4", "skin": "Daybreak", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Classified": [{ "weapon": "AK-47", "skin": "Hydroponic", "min_wear": 0, "max_wear": 0.8 }],
+    "Covert": [{ "weapon": "AUG", "skin": "Akihabara Accept", "min_wear": 0, "max_wear": 1 }]
+  },
+  "Safehouse Collection": {
+    "Consumer Grade": [
+      { "weapon": "Dual Berettas", "skin": "Contractor", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP7", "skin": "Army Recon", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Tec-9", "skin": "Army Mesh", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "SSG 08", "skin": "Blue Spruce", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SCAR-20", "skin": "Contractor", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "MP9", "skin": "Orange Peel", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AUG", "skin": "Condemned", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "USP-S", "skin": "Forest Leaves", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Galil AR", "skin": "VariCamo", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "M249", "skin": "Gator Mesh", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "G3SG1", "skin": "VariCamo", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "FAMAS", "skin": "Teardown", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Five-SeveN", "skin": "Silver Quartz", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "SSG 08", "skin": "Acid Fade", "min_wear": 0, "max_wear": 0.03 }
+    ],
+    "Restricted": [{ "weapon": "M4A1-S", "skin": "Nitro", "min_wear": 0.06, "max_wear": 0.8 }]
+  },
+  "St. Marc Collection": {
+    "Consumer Grade": [
+      { "weapon": "M249", "skin": "Jungle", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP5-SD", "skin": "Bamboo Garden", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "MAC-10", "skin": "Surfwood", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "PP-Bizon", "skin": "Seabird", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Sawed-Off", "skin": "Jungle Thicket", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "M4A4", "skin": "Dark Blossom", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P90", "skin": "Sunset Lily", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Tec-9", "skin": "Rust Leaf", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "XM1014", "skin": "Banana Leaf", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "MP7", "skin": "Teal Blossom", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Five-SeveN", "skin": "Crimson Blossom", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "FAMAS", "skin": "Sundown", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "UMP-45", "skin": "Day Lily", "min_wear": 0, "max_wear": 0.55 }
+    ],
+    "Restricted": [
+      { "weapon": "AUG", "skin": "Midnight Lily", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "SSG 08", "skin": "Sea Calico", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Glock-18", "skin": "Synth Leaf", "min_wear": 0, "max_wear": 0.7 }
+    ],
+    "Classified": [{ "weapon": "MP9", "skin": "Wild Lily", "min_wear": 0, "max_wear": 0.7 }],
+    "Covert": [{ "weapon": "AK-47", "skin": "Wild Lotus", "min_wear": 0, "max_wear": 1 }]
+  },
+  "Train Collection": {
+    "Consumer Grade": [
+      { "weapon": "PP-Bizon", "skin": "Urban Dashed", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Nova", "skin": "Polar Mesh", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Five-SeveN", "skin": "Forest Night", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "G3SG1", "skin": "Polar Camo", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Dual Berettas", "skin": "Colony", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "UMP-45", "skin": "Urban DDPAT", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "M4A4", "skin": "Urban DDPAT", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MAC-10", "skin": "Candy Apple", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "P90", "skin": "Ash Wood", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "SCAR-20", "skin": "Carbon Fiber", "min_wear": 0, "max_wear": 0.12 },
+      { "weapon": "MAG-7", "skin": "Metallic DDPAT", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "P250", "skin": "Metallic DDPAT", "min_wear": 0, "max_wear": 0.08 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "Sawed-Off", "skin": "Amber Fade", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "Desert Eagle", "skin": "Urban Rubble", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Restricted": [{ "weapon": "Tec-9", "skin": "Red Quartz", "min_wear": 0, "max_wear": 0.4 }]
+  },
+  "2021 Train Collection": {
+    "Mil-Spec": [
+      { "weapon": "SSG 08", "skin": "Spring Twilly", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "Tec-9", "skin": "Safety Net", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "UMP-45", "skin": "Full Stop", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "AUG", "skin": "Amber Fade", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "M4A1-S", "skin": "Fizzy POP", "min_wear": 0, "max_wear": 0.57 },
+      { "weapon": "Desert Eagle", "skin": "Sputnik", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "R8 Revolver", "skin": "Blaze", "min_wear": 0, "max_wear": 0.08 }
+    ],
+    "Restricted": [
+      { "weapon": "MP5-SD", "skin": "Autumn Twilly", "min_wear": 0, "max_wear": 0.58 },
+      { "weapon": "CZ75-Auto", "skin": "Syndicate", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "P2000", "skin": "Space Race", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Nova", "skin": "Red Quartz", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "AWP", "skin": "POP AWP", "min_wear": 0, "max_wear": 0.44 }
+    ],
+    "Classified": [
+      { "weapon": "MAC-10", "skin": "Propaganda", "min_wear": 0, "max_wear": 0.62 },
+      { "weapon": "FAMAS", "skin": "Meltdown", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "USP-S", "skin": "Whiteout", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Covert": [
+      { "weapon": "Glock-18", "skin": "Gamma Doppler", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "M4A4", "skin": "The Coalition", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Vertigo Collection": {
+    "Consumer Grade": [
+      { "weapon": "XM1014", "skin": "Urban Perforated", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MAC-10", "skin": "Urban DDPAT", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [{ "weapon": "PP-Bizon", "skin": "Carbon Fiber", "min_wear": 0, "max_wear": 0.12 }],
+    "Mil-Spec": [
+      { "weapon": "P90", "skin": "Glacier Mesh", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AK-47", "skin": "Black Laminate", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Restricted": [{ "weapon": "Dual Berettas", "skin": "Demolition", "min_wear": 0.26, "max_wear": 0.6 }]
+  },
+  "2021 Vertigo Collection": {
+    "Consumer Grade": [
+      { "weapon": "MAC-10", "skin": "Strats", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "FAMAS", "skin": "Faulty Wiring", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "XM1014", "skin": "Blue Tire", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "CZ75-Auto", "skin": "Framework", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Dual Berettas", "skin": "Oil Change", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "Glock-18", "skin": "Red Tire", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "UMP-45", "skin": "Mechanism", "min_wear": 0, "max_wear": 0.49 },
+      { "weapon": "SSG 08", "skin": "Carbon Fiber", "min_wear": 0, "max_wear": 0.12 },
+      { "weapon": "PP-Bizon", "skin": "Breaker Box", "min_wear": 0, "max_wear": 0.44 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "AK-47", "skin": "Green Laminate", "min_wear": 0.02, "max_wear": 0.4 },
+      { "weapon": "P90", "skin": "Schematic", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Nova", "skin": "Interlock", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Negev", "skin": "Infrastructure", "min_wear": 0, "max_wear": 0.49 }
+    ],
+    "Restricted": [
+      { "weapon": "Galil AR", "skin": "CAUTION!", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "MAG-7", "skin": "Prism Terrace", "min_wear": 0, "max_wear": 0.37 },
+      { "weapon": "P250", "skin": "Digital Architect", "min_wear": 0, "max_wear": 0.49 }
+    ],
+    "Classified": [
+      { "weapon": "Five-SeveN", "skin": "Fall Hazard", "min_wear": 0.01, "max_wear": 0.52 },
+      { "weapon": "SG 553", "skin": "Hazard Pay", "min_wear": 0, "max_wear": 0.48 }
+    ],
+    "Covert": [{ "weapon": "M4A1-S", "skin": "Imminent Danger", "min_wear": 0, "max_wear": 0.8 }]
+  },
+  "Alpha Collection": {
+    "Consumer Grade": [
+      { "weapon": "M249", "skin": "Jungle DDPAT", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Tec-9", "skin": "Tornado", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP9", "skin": "Dry Season", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Five-SeveN", "skin": "Anodized Gunmetal", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "XM1014", "skin": "Jungle", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP7", "skin": "Groundwater", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "Glock-18", "skin": "Sand Dune", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SSG 08", "skin": "Mayan Dreams", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Negev", "skin": "Palm", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Sawed-Off", "skin": "Mosaico", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P250", "skin": "Facets", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "AUG", "skin": "Anodized Navy", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "MAG-7", "skin": "Hazard", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "PP-Bizon", "skin": "Rust Coat", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "FAMAS", "skin": "Spitfire", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "SCAR-20", "skin": "Emerald", "min_wear": 0, "max_wear": 0.08 }
+    ]
+  },
+  "Control Collection": {
+    "Consumer Grade": [
+      { "weapon": "AUG", "skin": "Surveillance", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "XM1014", "skin": "Charter", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "MP9", "skin": "Army Sheen", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "P250", "skin": "Forest Night", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "CZ75-Auto", "skin": "Jungle Dashed", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Industrial Grade": [
+      { "weapon": "Dual Berettas", "skin": "Switch Board", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "Desert Eagle", "skin": "The Bronze", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "MAG-7", "skin": "Carbon Fiber", "min_wear": 0, "max_wear": 0.12 },
+      { "weapon": "MP5-SD", "skin": "Nitro", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Mil-Spec": [
+      { "weapon": "SCAR-20", "skin": "Magna Carta", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "P2000", "skin": "Dispatch", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "SSG 08", "skin": "Threat Detected", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "M4A4", "skin": "Global Offensive", "min_wear": 0, "max_wear": 0.7 }
+    ],
+    "Restricted": [
+      { "weapon": "FAMAS", "skin": "Prime Conspiracy", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "UMP-45", "skin": "Crime Scene", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "Five-SeveN", "skin": "Berries And Cherries", "min_wear": 0, "max_wear": 0.1 }
+    ],
+    "Classified": [
+      { "weapon": "USP-S", "skin": "Target Acquired", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "M4A1-S", "skin": "Blue Phosphor", "min_wear": 0, "max_wear": 0.08 }
+    ],
+    "Covert": [{ "weapon": "AWP", "skin": "Fade", "min_wear": 0, "max_wear": 0.08 }]
+  },
+  "CS:GO Weapon Case": {
+    "Mil-Spec": [
+      { "weapon": "MP7", "skin": "Skulls", "min_wear": 0.1, "max_wear": 0.26 },
+      { "weapon": "SG 553", "skin": "Ultraviolet", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AUG", "skin": "Wings", "min_wear": 0, "max_wear": 0.14 }
+    ],
+    "Restricted": [
+      { "weapon": "M4A1-S", "skin": "Dark Water", "min_wear": 0.1, "max_wear": 0.26 },
+      { "weapon": "USP-S", "skin": "Dark Water", "min_wear": 0.1, "max_wear": 0.26 },
+      { "weapon": "Glock-18", "skin": "Dragon Tattoo", "min_wear": 0, "max_wear": 0.08 }
+    ],
+    "Classified": [
+      { "weapon": "Desert Eagle", "skin": "Hypnotic", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "AK-47", "skin": "Case Hardened", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [{ "weapon": "AWP", "skin": "Lightning Strike", "min_wear": 0, "max_wear": 0.08 }]
+  },
+  "eSports 2013 Case": {
+    "Mil-Spec": [
+      { "weapon": "M4A4", "skin": "Faded Zebra", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "FAMAS", "skin": "Doomkitty", "min_wear": 0.08, "max_wear": 0.22 },
+      { "weapon": "MAG-7", "skin": "Memento", "min_wear": 0.02, "max_wear": 0.18 }
+    ],
+    "Restricted": [
+      { "weapon": "Sawed-Off", "skin": "Orange DDPAT", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P250", "skin": "Splash", "min_wear": 0.06, "max_wear": 0.18 },
+      { "weapon": "Galil AR", "skin": "Orange DDPAT", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Classified": [
+      { "weapon": "AK-47", "skin": "Red Laminate", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AWP", "skin": "BOOM", "min_wear": 0.06, "max_wear": 0.28 }
+    ],
+    "Covert": [{ "weapon": "P90", "skin": "Death by Kitty", "min_wear": 0.08, "max_wear": 0.32 }]
+  },
+  "Operation Bravo Case": {
+    "Mil-Spec": [
+      { "weapon": "Nova", "skin": "Tempest", "min_wear": 0.06, "max_wear": 0.22 },
+      { "weapon": "Dual Berettas", "skin": "Black Limba", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "UMP-45", "skin": "Bone Pile", "min_wear": 0.06, "max_wear": 0.34 },
+      { "weapon": "SG 553", "skin": "Wave Spray", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Galil AR", "skin": "Shattered", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "G3SG1", "skin": "Demeter", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Restricted": [
+      { "weapon": "M4A1-S", "skin": "Bright Water", "min_wear": 0.1, "max_wear": 0.22 },
+      { "weapon": "M4A4", "skin": "Zirka", "min_wear": 0.06, "max_wear": 0.42 },
+      { "weapon": "MAC-10", "skin": "Graven", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "USP-S", "skin": "Overgrowth", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Classified": [
+      { "weapon": "P90", "skin": "Emerald Dragon", "min_wear": 0.06, "max_wear": 0.52 },
+      { "weapon": "P2000", "skin": "Ocean Foam", "min_wear": 0, "max_wear": 0.12 },
+      { "weapon": "AWP", "skin": "Graphite", "min_wear": 0, "max_wear": 0.12 }
+    ],
+    "Covert": [
+      { "weapon": "Desert Eagle", "skin": "Golden Koi", "min_wear": 0, "max_wear": 0.12 },
+      { "weapon": "AK-47", "skin": "Fire Serpent", "min_wear": 0.06, "max_wear": 0.76 }
+    ]
+  },
+  "CS:GO Weapon Case 2": {
+    "Mil-Spec": [
+      { "weapon": "Tec-9", "skin": "Blue Titanium", "min_wear": 0, "max_wear": 0.04 },
+      { "weapon": "M4A1-S", "skin": "Blood Tiger", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "FAMAS", "skin": "Hexane", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "P250", "skin": "Hive", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "SCAR-20", "skin": "Crimson Web", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Restricted": [
+      { "weapon": "Five-SeveN", "skin": "Case Hardened", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP9", "skin": "Hypnotic", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "Nova", "skin": "Graphite", "min_wear": 0, "max_wear": 0.12 },
+      { "weapon": "Dual Berettas", "skin": "Hemoglobin", "min_wear": 0, "max_wear": 0.2 }
+    ],
+    "Classified": [
+      { "weapon": "P90", "skin": "Cold Blooded", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "USP-S", "skin": "Serum", "min_wear": 0, "max_wear": 0.25 }
+    ],
+    "Covert": [{ "weapon": "SSG 08", "skin": "Blood in the Water", "min_wear": 0.06, "max_wear": 0.2 }]
+  },
+  "Winter Offensive Weapon Case": {
+    "Mil-Spec": [
+      { "weapon": "PP-Bizon", "skin": "Cobalt Halftone", "min_wear": 0.05, "max_wear": 0.45 },
+      { "weapon": "M249", "skin": "Magma", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Five-SeveN", "skin": "Kami", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "Galil AR", "skin": "Sandstorm", "min_wear": 0.1, "max_wear": 0.6 }
+    ],
+    "Restricted": [
+      { "weapon": "Nova", "skin": "Rising Skull", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "MP9", "skin": "Rose Iron", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "Dual Berettas", "skin": "Marina", "min_wear": 0.05, "max_wear": 0.5 },
+      { "weapon": "FAMAS", "skin": "Pulse", "min_wear": 0, "max_wear": 0.4 }
+    ],
+    "Classified": [
+      { "weapon": "AWP", "skin": "Redline", "min_wear": 0.1, "max_wear": 0.4 },
+      { "weapon": "P250", "skin": "Mehndi", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "M4A1-S", "skin": "Guardian", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Covert": [
+      { "weapon": "Sawed-Off", "skin": "The Kraken", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "M4A4", "skin": "Asiimov", "min_wear": 0.18, "max_wear": 1 }
+    ]
+  },
+  "eSports 2013 Winter Case": {
+    "Mil-Spec": [
+      { "weapon": "Galil AR", "skin": "Blue Titanium", "min_wear": 0, "max_wear": 0.04 },
+      { "weapon": "Five-SeveN", "skin": "Nightshade", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "PP-Bizon", "skin": "Water Sigil", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Nova", "skin": "Ghost Camo", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "G3SG1", "skin": "Azure Zebra", "min_wear": 0, "max_wear": 0.28 },
+      { "weapon": "P250", "skin": "Steel Disruption", "min_wear": 0, "max_wear": 0.2 }
+    ],
+    "Restricted": [
+      { "weapon": "AK-47", "skin": "Blue Laminate", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "Blind Spot", "min_wear": 0.02, "max_wear": 0.4 }
+    ],
+    "Classified": [
+      { "weapon": "FAMAS", "skin": "Afterimage", "min_wear": 0.02, "max_wear": 0.4 },
+      { "weapon": "AWP", "skin": "Electric Hive", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "Desert Eagle", "skin": "Cobalt Disruption", "min_wear": 0, "max_wear": 0.2 }
+    ],
+    "Covert": [{ "weapon": "M4A4", "skin": "X-Ray", "min_wear": 0, "max_wear": 0.3 }]
+  },
+  "CS:GO Weapon Case 3": {
+    "Mil-Spec": [
+      { "weapon": "CZ75-Auto", "skin": "Crimson Web", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P2000", "skin": "Red FragCam", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Dual Berettas", "skin": "Panther", "min_wear": 0, "max_wear": 0.58 },
+      { "weapon": "USP-S", "skin": "Stainless", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Glock-18", "skin": "Blue Fissure", "min_wear": 0.06, "max_wear": 0.58 }
+    ],
+    "Restricted": [
+      { "weapon": "CZ75-Auto", "skin": "Tread Plate", "min_wear": 0, "max_wear": 0.2 },
+      { "weapon": "Tec-9", "skin": "Titanium Bit", "min_wear": 0, "max_wear": 0.2 },
+      { "weapon": "Desert Eagle", "skin": "Heirloom", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Five-SeveN", "skin": "Copper Galaxy", "min_wear": 0, "max_wear": 0.2 }
+    ],
+    "Classified": [
+      { "weapon": "CZ75-Auto", "skin": "The Fuschia Is Now", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "P250", "skin": "Undertow", "min_wear": 0, "max_wear": 0.2 }
+    ],
+    "Covert": [{ "weapon": "CZ75-Auto", "skin": "Victoria", "min_wear": 0, "max_wear": 0.75 }]
+  },
+  "Operation Phoenix Weapon Case": {
+    "Mil-Spec": [
+      { "weapon": "UMP-45", "skin": "Corporal", "min_wear": 0.05, "max_wear": 0.75 },
+      { "weapon": "Negev", "skin": "Terrain", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "Tec-9", "skin": "Sandstorm", "min_wear": 0.1, "max_wear": 0.7 },
+      { "weapon": "MAG-7", "skin": "Heaven Guard", "min_wear": 0, "max_wear": 0.4 }
+    ],
+    "Restricted": [
+      { "weapon": "MAC-10", "skin": "Heat", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Pulse", "min_wear": 0.1, "max_wear": 0.6 },
+      { "weapon": "FAMAS", "skin": "Sergeant", "min_wear": 0.1, "max_wear": 1 },
+      { "weapon": "USP-S", "skin": "Guardian", "min_wear": 0, "max_wear": 0.38 }
+    ],
+    "Classified": [
+      { "weapon": "AK-47", "skin": "Redline", "min_wear": 0.1, "max_wear": 0.7 },
+      { "weapon": "P90", "skin": "Trigon", "min_wear": 0.08, "max_wear": 0.75 },
+      { "weapon": "Nova", "skin": "Antique", "min_wear": 0, "max_wear": 0.3 }
+    ],
+    "Covert": [
+      { "weapon": "AWP", "skin": "Asiimov", "min_wear": 0.18, "max_wear": 1 },
+      { "weapon": "AUG", "skin": "Chameleon", "min_wear": 0, "max_wear": 0.5 }
+    ]
+  },
+  "Huntsman Weapon Case": {
+    "Mil-Spec": [
+      { "weapon": "Tec-9", "skin": "Isaac", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SSG 08", "skin": "Slashed", "min_wear": 0.15, "max_wear": 0.8 },
+      { "weapon": "Dual Berettas", "skin": "Retribution **", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "Galil AR", "skin": "Kami", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "P90", "skin": "Desert Warfare **", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "CZ75-Auto", "skin": "Poison Dart **", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "CZ75-Auto", "skin": "Twist *", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "Module *", "min_wear": 0, "max_wear": 0.35 },
+      { "weapon": "P2000", "skin": "Pulse *", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Restricted": [
+      { "weapon": "AUG", "skin": "Torque", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "PP-Bizon", "skin": "Antique", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "XM1014", "skin": "Heaven Guard", "min_wear": 0.03, "max_wear": 0.5 },
+      { "weapon": "MAC-10", "skin": "Curse **", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "MAC-10", "skin": "Tatter *", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Classified": [
+      { "weapon": "M4A1-S", "skin": "Atomic Alloy", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "SCAR-20", "skin": "Cyrex", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "USP-S", "skin": "Orion **", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "USP-S", "skin": "Caiman *", "min_wear": 0, "max_wear": 0.4 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Vulcan", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "M4A4", "skin": "Desert-Strike *", "min_wear": 0, "max_wear": 0.7 }
+    ],
+    "Other": [{ "weapon": "M4A4", "skin": "Howl **", "min_wear": 0, "max_wear": 0.4, "quality": "Contraband" }]
+  },
+  "Operation Breakout Weapon Case": {
+    "Mil-Spec": [
+      { "weapon": "MP7", "skin": "Urban Hazard", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Negev", "skin": "Desert-Strike", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P2000", "skin": "Ivory", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SSG 08", "skin": "Abyss", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "UMP-45", "skin": "Labyrinth", "min_wear": 0, "max_wear": 0.4 }
+    ],
+    "Restricted": [
+      { "weapon": "PP-Bizon", "skin": "Osiris", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "CZ75-Auto", "skin": "Tigris", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Nova", "skin": "Koi", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "P250", "skin": "Supernova", "min_wear": 0, "max_wear": 0.4 }
+    ],
+    "Classified": [
+      { "weapon": "Desert Eagle", "skin": "Conspiracy", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "Five-SeveN", "skin": "Fowl Play", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Glock-18", "skin": "Water Elemental", "min_wear": 0, "max_wear": 0.7 }
+    ],
+    "Covert": [
+      { "weapon": "P90", "skin": "Asiimov", "min_wear": 0, "max_wear": 0.92 },
+      { "weapon": "M4A1-S", "skin": "Cyrex", "min_wear": 0, "max_wear": 0.5 }
+    ]
+  },
+  "eSports 2014 Summer Case": {
+    "Mil-Spec": [
+      { "weapon": "SSG 08", "skin": "Dark Water", "min_wear": 0.1, "max_wear": 0.26 },
+      { "weapon": "MAC-10", "skin": "Ultraviolet", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "USP-S", "skin": "Blood Tiger", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "CZ75-Auto", "skin": "Hexane", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "Negev", "skin": "Bratatat", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "XM1014", "skin": "Red Python", "min_wear": 0.08, "max_wear": 0.5 }
+    ],
+    "Restricted": [
+      { "weapon": "PP-Bizon", "skin": "Blue Streak", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "P90", "skin": "Virus", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "MP7", "skin": "Ocean Foam", "min_wear": 0, "max_wear": 0.08 },
+      { "weapon": "Glock-18", "skin": "Steel Disruption", "min_wear": 0, "max_wear": 0.2 },
+      { "weapon": "Desert Eagle", "skin": "Crimson Web", "min_wear": 0.06, "max_wear": 0.8 }
+    ],
+    "Classified": [
+      { "weapon": "AUG", "skin": "Bengal Tiger", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "Nova", "skin": "Bloomstick", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AWP", "skin": "Corticera", "min_wear": 0.06, "max_wear": 0.3 },
+      { "weapon": "P2000", "skin": "Corticera", "min_wear": 0.06, "max_wear": 0.3 }
+    ],
+    "Covert": [
+      { "weapon": "M4A4", "skin": "Bullet Rain", "min_wear": 0.02, "max_wear": 0.46 },
+      { "weapon": "AK-47", "skin": "Jaguar", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Operation Vanguard Weapon Case": {
+    "Mil-Spec": [
+      { "weapon": "G3SG1", "skin": "Murky", "min_wear": 0, "max_wear": 0.25 },
+      { "weapon": "MAG-7", "skin": "Firestarter", "min_wear": 0.06, "max_wear": 0.49 },
+      { "weapon": "MP9", "skin": "Dart", "min_wear": 0, "max_wear": 0.46 },
+      { "weapon": "Five-SeveN", "skin": "Urban Hazard", "min_wear": 0, "max_wear": 0.25 },
+      { "weapon": "UMP-45", "skin": "Delusion", "min_wear": 0.06, "max_wear": 0.35 }
+    ],
+    "Restricted": [
+      { "weapon": "Glock-18", "skin": "Grinder", "min_wear": 0.02, "max_wear": 0.25 },
+      { "weapon": "M4A1-S", "skin": "Basilisk", "min_wear": 0, "max_wear": 0.68 },
+      { "weapon": "M4A4", "skin": "Griffin", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Sawed-Off", "skin": "Highwayman", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "P250", "skin": "Cartel", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "SCAR-20", "skin": "Cardiac", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "XM1014", "skin": "Tranquility", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Wasteland Rebel", "min_wear": 0.05, "max_wear": 0.7 },
+      { "weapon": "P2000", "skin": "Fire Elemental", "min_wear": 0, "max_wear": 0.6 }
+    ]
+  },
+  "Chroma Case": {
+    "Mil-Spec": [
+      { "weapon": "Glock-18", "skin": "Catacombs", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "M249", "skin": "System Lock", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "MP9", "skin": "Deadly Poison", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SCAR-20", "skin": "Grotto", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "XM1014", "skin": "Quicksilver", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Restricted": [
+      { "weapon": "Dual Berettas", "skin": "Urban Shock", "min_wear": 0, "max_wear": 0.47 },
+      { "weapon": "Desert Eagle", "skin": "Naga", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAC-10", "skin": "Malachite", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Sawed-Off", "skin": "Serenity", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Classified": [
+      { "weapon": "AK-47", "skin": "Cartel", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "M4A4", "skin": "龍王 (Dragon King)", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "P250", "skin": "Muertos", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Covert": [
+      { "weapon": "AWP", "skin": "Man-o'-war", "min_wear": 0.1, "max_wear": 0.2 },
+      { "weapon": "Galil AR", "skin": "Chatterbox", "min_wear": 0.35, "max_wear": 0.85 }
+    ]
+  },
+  "Chroma 2 Case": {
+    "Mil-Spec": [
+      { "weapon": "AK-47", "skin": "Elite Build", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP7", "skin": "Armor Core", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Desert Eagle", "skin": "Bronze Deco", "min_wear": 0, "max_wear": 0.46 },
+      { "weapon": "P250", "skin": "Valence", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Sawed-Off", "skin": "Origami", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "Negev", "skin": "Man-o'-war", "min_wear": 0.1, "max_wear": 0.2 }
+    ],
+    "Restricted": [
+      { "weapon": "AWP", "skin": "Worm God", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "MAG-7", "skin": "Heat", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "CZ75-Auto", "skin": "Pole Position", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "UMP-45", "skin": "Grand Prix", "min_wear": 0.25, "max_wear": 0.35 }
+    ],
+    "Classified": [
+      { "weapon": "Five-SeveN", "skin": "Monkey Business", "min_wear": 0.1, "max_wear": 0.9 },
+      { "weapon": "Galil AR", "skin": "Eco", "min_wear": 0.1, "max_wear": 0.85 },
+      { "weapon": "FAMAS", "skin": "Djinn", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "M4A1-S", "skin": "Hyper Beast", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAC-10", "skin": "Neon Rider", "min_wear": 0, "max_wear": 0.45 }
+    ]
+  },
+  "Falchion Case": {
+    "Mil-Spec": [
+      { "weapon": "Galil AR", "skin": "Rocket Pop", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Glock-18", "skin": "Bunsen Burner", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Nova", "skin": "Ranger", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "Elite Build", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "UMP-45", "skin": "Riot", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "USP-S", "skin": "Torque", "min_wear": 0, "max_wear": 0.46 }
+    ],
+    "Restricted": [
+      { "weapon": "FAMAS", "skin": "Neural Net", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "M4A4", "skin": "Evil Daimyo", "min_wear": 0, "max_wear": 0.52 },
+      { "weapon": "MP9", "skin": "Ruby Poison Dart", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Negev", "skin": "Loudmouth", "min_wear": 0.14, "max_wear": 0.65 },
+      { "weapon": "P2000", "skin": "Handgun", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "CZ75-Auto", "skin": "Yellow Jacket", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP7", "skin": "Nemesis", "min_wear": 0, "max_wear": 0.32 },
+      { "weapon": "SG 553", "skin": "Cyrex", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Aquamarine Revenge", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AWP", "skin": "Hyper Beast", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Shadow Case": {
+    "Mil-Spec": [
+      { "weapon": "Dual Berettas", "skin": "Dualing Dragons", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "FAMAS", "skin": "Survivor Z", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Glock-18", "skin": "Wraiths", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "MAC-10", "skin": "Rangeen", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "MAG-7", "skin": "Cobalt Core", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "SCAR-20", "skin": "Green Marine", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "XM1014", "skin": "Scumbria", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "Galil AR", "skin": "Stone Cold", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "M249", "skin": "Nebula Crusader", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP7", "skin": "Special Delivery", "min_wear": 0, "max_wear": 0.62 },
+      { "weapon": "P250", "skin": "Wingshot", "min_wear": 0, "max_wear": 0.9 }
+    ],
+    "Classified": [
+      { "weapon": "AK-47", "skin": "Frontside Misty", "min_wear": 0.02, "max_wear": 0.87 },
+      { "weapon": "G3SG1", "skin": "Flux", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "SSG 08", "skin": "Big Iron", "min_wear": 0, "max_wear": 0.64 }
+    ],
+    "Covert": [
+      { "weapon": "M4A1-S", "skin": "Golden Coil", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "USP-S", "skin": "Kill Confirmed", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Revolver Case": {
+    "Mil-Spec": [
+      { "weapon": "R8 Revolver", "skin": "Crimson Web", "min_wear": 0.06, "max_wear": 0.8 },
+      { "weapon": "AUG", "skin": "Ricochet", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Desert Eagle", "skin": "Corinthian", "min_wear": 0, "max_wear": 0.44 },
+      { "weapon": "P2000", "skin": "Imperial", "min_wear": 0, "max_wear": 0.2 },
+      { "weapon": "Sawed-Off", "skin": "Yorick", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SCAR-20", "skin": "Outbreak", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Restricted": [
+      { "weapon": "PP-Bizon", "skin": "Fuel Rod", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Five-SeveN", "skin": "Retrobution", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Negev", "skin": "Power Loader", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Tiger Moth", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Tec-9", "skin": "Avalanche", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "XM1014", "skin": "Teclu Burner", "min_wear": 0, "max_wear": 0.65 }
+    ],
+    "Classified": [
+      { "weapon": "AK-47", "skin": "Point Disarray", "min_wear": 0, "max_wear": 0.67 },
+      { "weapon": "G3SG1", "skin": "The Executioner", "min_wear": 0.14, "max_wear": 0.85 },
+      { "weapon": "P90", "skin": "Shapewood", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "M4A4", "skin": "Royal Paladin", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "R8 Revolver", "skin": "Fade", "min_wear": 0, "max_wear": 0.4 }
+    ]
+  },
+  "Operation Wildfire Case": {
+    "Mil-Spec": [
+      { "weapon": "PP-Bizon", "skin": "Photic Zone", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Dual Berettas", "skin": "Cartel", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAC-10", "skin": "Lapis Gator", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "SSG 08", "skin": "Necropos", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Tec-9", "skin": "Jambiya", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "USP-S", "skin": "Lead Conduit", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "FAMAS", "skin": "Valence", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Five-SeveN", "skin": "Triumvirate", "min_wear": 0, "max_wear": 0.61 },
+      { "weapon": "Glock-18", "skin": "Royal Legion", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAG-7", "skin": "Praetorian", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "MP7", "skin": "Impire", "min_wear": 0, "max_wear": 0.4 }
+    ],
+    "Classified": [
+      { "weapon": "AWP", "skin": "Elite Build", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Desert Eagle", "skin": "Kumicho Dragon", "min_wear": 0, "max_wear": 0.76 },
+      { "weapon": "Nova", "skin": "Hyper Beast", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Covert": [
+      { "weapon": "M4A4", "skin": "The Battlestar", "min_wear": 0, "max_wear": 0.64 },
+      { "weapon": "AK-47", "skin": "Fuel Injector", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Chroma 3 Case": {
+    "Mil-Spec": [
+      { "weapon": "Dual Berettas", "skin": "Ventilators", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "G3SG1", "skin": "Orange Crash", "min_wear": 0, "max_wear": 0.52 },
+      { "weapon": "M249", "skin": "Spectre", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "MP9", "skin": "Bioleak", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P2000", "skin": "Oceanic", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "SG 553", "skin": "Atlas", "min_wear": 0, "max_wear": 0.81 },
+      { "weapon": "Sawed-Off", "skin": "Fubar", "min_wear": 0.4, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "Galil AR", "skin": "Firefight", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "CZ75-Auto", "skin": "Red Astor", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "XM1014", "skin": "Black Tie", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "SSG 08", "skin": "Ghost Crusader", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Tec-9", "skin": "Re-Entry", "min_wear": 0, "max_wear": 0.43 }
+    ],
+    "Classified": [
+      { "weapon": "UMP-45", "skin": "Primal Saber", "min_wear": 0, "max_wear": 0.77 },
+      { "weapon": "P250", "skin": "Asiimov", "min_wear": 0.1, "max_wear": 1 },
+      { "weapon": "AUG", "skin": "Fleet Flock", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "M4A1-S", "skin": "Chantico's Fire", "min_wear": 0, "max_wear": 0.99 },
+      { "weapon": "PP-Bizon", "skin": "Judgement of Anubis", "min_wear": 0, "max_wear": 0.5 }
+    ]
+  },
+  "Gamma Case": {
+    "Mil-Spec": [
+      { "weapon": "Five-SeveN", "skin": "Violent Daimyo", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "MAC-10", "skin": "Carnivore", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Nova", "skin": "Exo", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "P250", "skin": "Iron Clad", "min_wear": 0.05, "max_wear": 0.8 },
+      { "weapon": "PP-Bizon", "skin": "Harvester", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Aerial", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Tec-9", "skin": "Ice Cap", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Restricted": [
+      { "weapon": "AUG", "skin": "Aristocrat", "min_wear": 0, "max_wear": 0.66 },
+      { "weapon": "AWP", "skin": "Phobos", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "P90", "skin": "Chopper", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "R8 Revolver", "skin": "Reboot", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Sawed-Off", "skin": "Limelight", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "M4A4", "skin": "Desolate Space", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P2000", "skin": "Imperial Dragon", "min_wear": 0, "max_wear": 0.63 },
+      { "weapon": "SCAR-20", "skin": "Bloodsport", "min_wear": 0, "max_wear": 0.45 }
+    ],
+    "Covert": [
+      { "weapon": "Glock-18", "skin": "Wasteland Rebel", "min_wear": 0, "max_wear": 0.54 },
+      { "weapon": "M4A1-S", "skin": "Mecha Industries", "min_wear": 0, "max_wear": 0.8 }
+    ]
+  },
+  "Gamma 2 Case": {
+    "Mil-Spec": [
+      { "weapon": "XM1014", "skin": "Slipstream", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "UMP-45", "skin": "Briefing", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "Grim", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Negev", "skin": "Dazzle", "min_wear": 0.1, "max_wear": 0.65 },
+      { "weapon": "G3SG1", "skin": "Ventilator", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "Five-SeveN", "skin": "Scumbria", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "CZ75-Auto", "skin": "Imprint", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "SG 553", "skin": "Triarch", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SCAR-20", "skin": "Powercore", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAG-7", "skin": "Petroglyph", "min_wear": 0, "max_wear": 0.44 },
+      { "weapon": "Glock-18", "skin": "Weasel", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Desert Eagle", "skin": "Directive", "min_wear": 0.06, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "Tec-9", "skin": "Fuel Injector", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP9", "skin": "Airlock", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AUG", "skin": "Syd Mead", "min_wear": 0, "max_wear": 0.8 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Neon Revolution", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "FAMAS", "skin": "Roll Cage", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Glove Case": {
+    "Mil-Spec": [
+      { "weapon": "P2000", "skin": "Turf", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAG-7", "skin": "Sonar", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "MP9", "skin": "Sand Scale", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "Galil AR", "skin": "Black Sand", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP7", "skin": "Cirrus", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "Glock-18", "skin": "Ironwork", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "CZ75-Auto", "skin": "Polymer", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Restricted": [
+      { "weapon": "USP-S", "skin": "Cyrex", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "Nova", "skin": "Gila", "min_wear": 0, "max_wear": 0.3 },
+      { "weapon": "M4A1-S", "skin": "Flashback", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "G3SG1", "skin": "Stinger", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Dual Berettas", "skin": "Royal Consorts", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "Sawed-Off", "skin": "Wasteland Princess", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "P90", "skin": "Shallow Grave", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "FAMAS", "skin": "Mecha Industries", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Covert": [
+      { "weapon": "M4A4", "skin": "Buzz Kill", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "SSG 08", "skin": "Dragonfire", "min_wear": 0, "max_wear": 0.5 }
+    ]
+  },
+  "Spectrum Case": {
+    "Mil-Spec": [
+      { "weapon": "PP-Bizon", "skin": "Jungle Slipstream", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "SCAR-20", "skin": "Blueprint", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "Desert Eagle", "skin": "Oxide Blaze", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Five-SeveN", "skin": "Capillary", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "MP7", "skin": "Akoben", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "P250", "skin": "Ripple", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Sawed-Off", "skin": "Zander", "min_wear": 0.05, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "Galil AR", "skin": "Crimson Tsunami", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "M249", "skin": "Emerald Poison Dart", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "MAC-10", "skin": "Last Dive", "min_wear": 0, "max_wear": 0.52 },
+      { "weapon": "UMP-45", "skin": "Scaffold", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "XM1014", "skin": "Seasons", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Classified": [
+      { "weapon": "AWP", "skin": "Fever Dream", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "CZ75-Auto", "skin": "Xiangliu", "min_wear": 0, "max_wear": 0.56 },
+      { "weapon": "M4A1-S", "skin": "Decimator", "min_wear": 0, "max_wear": 0.85 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Bloodsport", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "USP-S", "skin": "Neo-Noir", "min_wear": 0, "max_wear": 0.7 }
+    ]
+  },
+  "Operation Hydra Case": {
+    "Mil-Spec": [
+      { "weapon": "USP-S", "skin": "Blueprint", "min_wear": 0, "max_wear": 0.86 },
+      { "weapon": "FAMAS", "skin": "Macabre", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "M4A1-S", "skin": "Briefing", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "MAC-10", "skin": "Aloha", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "MAG-7", "skin": "Hard Water", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "Tec-9", "skin": "Cut Out", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "UMP-45", "skin": "Metal Flowers", "min_wear": 0, "max_wear": 0.7 }
+    ],
+    "Restricted": [
+      { "weapon": "AK-47", "skin": "Orbit Mk01", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "P2000", "skin": "Woodsman", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "P250", "skin": "Red Rock", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "Death Grip", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SSG 08", "skin": "Death's Head", "min_wear": 0, "max_wear": 0.51 }
+    ],
+    "Classified": [
+      { "weapon": "Dual Berettas", "skin": "Cobra Strike", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Galil AR", "skin": "Sugar Rush", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "M4A4", "skin": "Hellfire", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Covert": [
+      { "weapon": "Five-SeveN", "skin": "Hyper Beast", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AWP", "skin": "Oni Taiji", "min_wear": 0, "max_wear": 0.5 }
+    ]
+  },
+  "Spectrum 2 Case": {
+    "Mil-Spec": [
+      { "weapon": "MAC-10", "skin": "Oceanic", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Sawed-Off", "skin": "Morris", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SCAR-20", "skin": "Jungle Slipstream", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Five-SeveN", "skin": "Capillary", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AUG", "skin": "Triqua", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "G3SG1", "skin": "Hunter", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Tec-9", "skin": "Cracked Opal", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Glock-18", "skin": "Off World", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "MP9", "skin": "Goo", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "SG 553", "skin": "Phantom", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "XM1014", "skin": "Ziggy", "min_wear": 0, "max_wear": 0.72 },
+      { "weapon": "UMP-45", "skin": "Exposure", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "CZ75-Auto", "skin": "Tacticat", "min_wear": 0, "max_wear": 0.7 }
+    ],
+    "Classified": [
+      { "weapon": "PP-Bizon", "skin": "High Roller", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "R8 Revolver", "skin": "Llama Cannon", "min_wear": 0.03, "max_wear": 0.7 },
+      { "weapon": "M4A1-S", "skin": "Leaded Glass", "min_wear": 0, "max_wear": 0.7 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "The Empress", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P250", "skin": "See Ya Later", "min_wear": 0, "max_wear": 0.7 }
+    ]
+  },
+  "Clutch Case": {
+    "Mil-Spec": [
+      { "weapon": "SG 553", "skin": "Aloha", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "MP9", "skin": "Black Sand", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "XM1014", "skin": "Oxide Blaze", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "P2000", "skin": "Urban Hazard", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "R8 Revolver", "skin": "Grip", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Five-SeveN", "skin": "Flame Test", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "PP-Bizon", "skin": "Night Riot", "min_wear": 0, "max_wear": 0.8 }
+    ],
+    "Restricted": [
+      { "weapon": "Nova", "skin": "Wild Six", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Negev", "skin": "Lionfish", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "MAG-7", "skin": "SWAG-7", "min_wear": 0, "max_wear": 0.92 },
+      { "weapon": "UMP-45", "skin": "Arctic Wolf", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Glock-18", "skin": "Moonrise", "min_wear": 0, "max_wear": 0.65 }
+    ],
+    "Classified": [
+      { "weapon": "USP-S", "skin": "Cortex", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AUG", "skin": "Stymphalian", "min_wear": 0, "max_wear": 0.63 },
+      { "weapon": "AWP", "skin": "Mortis", "min_wear": 0, "max_wear": 0.64 }
+    ],
+    "Covert": [
+      { "weapon": "MP7", "skin": "Bloodsport", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "M4A4", "skin": "Neo-Noir", "min_wear": 0, "max_wear": 0.9 }
+    ]
+  },
+  "Horizon Case": {
+    "Mil-Spec": [
+      { "weapon": "Dual Berettas", "skin": "Shred", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "R8 Revolver", "skin": "Survivalist", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "MP9", "skin": "Capillary", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "AUG", "skin": "Amber Slipstream", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "Tec-9", "skin": "Snek-9", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "Traction", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Glock-18", "skin": "Warhawk", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "Nova", "skin": "Toy Soldier", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "G3SG1", "skin": "High Seas", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "MP7", "skin": "Powercore", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "CZ75-Auto", "skin": "Eco", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AWP", "skin": "PAW", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Classified": [
+      { "weapon": "FAMAS", "skin": "Eye of Athena", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Sawed-Off", "skin": "Devourer", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "M4A1-S", "skin": "Nightmare", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "Desert Eagle", "skin": "Code Red", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AK-47", "skin": "Neon Rider", "min_wear": 0, "max_wear": 0.8 }
+    ]
+  },
+  "Danger Zone Case": {
+    "Mil-Spec": [
+      { "weapon": "MP9", "skin": "Modest Threat", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "Glock-18", "skin": "Oxide Blaze", "min_wear": 0, "max_wear": 0.85 },
+      { "weapon": "Nova", "skin": "Wood Fired", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "M4A4", "skin": "Magnesium", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Sawed-Off", "skin": "Black Sand", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "SG 553", "skin": "Danger Close", "min_wear": 0.02, "max_wear": 0.8 },
+      { "weapon": "Tec-9", "skin": "Fubar", "min_wear": 0.14, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "G3SG1", "skin": "Scavenger", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "Galil AR", "skin": "Signal", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "MAC-10", "skin": "Pipe Down", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "P250", "skin": "Nevermore", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "USP-S", "skin": "Flashback", "min_wear": 0, "max_wear": 0.5 }
+    ],
+    "Classified": [
+      { "weapon": "UMP-45", "skin": "Momentum", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Desert Eagle", "skin": "Mecha Industries", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "MP5-SD", "skin": "Phosphor", "min_wear": 0, "max_wear": 0.8 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Asiimov", "min_wear": 0.05, "max_wear": 0.7 },
+      { "weapon": "AWP", "skin": "Neo-Noir", "min_wear": 0, "max_wear": 0.5 }
+    ]
+  },
+  "Prisma Case": {
+    "Mil-Spec": [
+      { "weapon": "FAMAS", "skin": "Crypsis", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "AK-47", "skin": "Uncharted", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "MAC-10", "skin": "Whitefish", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Galil AR", "skin": "Akoben", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "MP7", "skin": "Mischief", "min_wear": 0.1, "max_wear": 1 },
+      { "weapon": "P250", "skin": "Verdigris", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "P90", "skin": "Off World", "min_wear": 0, "max_wear": 0.75 }
+    ],
+    "Restricted": [
+      { "weapon": "AWP", "skin": "Atheris", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Tec-9", "skin": "Bamboozle", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Desert Eagle", "skin": "Light Rail", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "MP5-SD", "skin": "Gauss", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "UMP-45", "skin": "Moonrise", "min_wear": 0, "max_wear": 0.4 }
+    ],
+    "Classified": [
+      { "weapon": "R8 Revolver", "skin": "Skull Crusher", "min_wear": 0.25, "max_wear": 0.8 },
+      { "weapon": "AUG", "skin": "Momentum", "min_wear": 0.05, "max_wear": 1 },
+      { "weapon": "XM1014", "skin": "Incinegator", "min_wear": 0.14, "max_wear": 0.65 }
+    ],
+    "Covert": [
+      { "weapon": "Five-SeveN", "skin": "Angry Mob", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "M4A4", "skin": "The Emperor", "min_wear": 0, "max_wear": 0.8 }
+    ]
+  },
+  "CS20 Case": {
+    "Mil-Spec": [
+      { "weapon": "Tec-9", "skin": "Flash Out", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "SCAR-20", "skin": "Assault", "min_wear": 0, "max_wear": 0.62 },
+      { "weapon": "Dual Berettas", "skin": "Elite 1.6", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "MAG-7", "skin": "Popdog", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "MAC-10", "skin": "Classic Crate", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "FAMAS", "skin": "Decommissioned", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Glock-18", "skin": "Sacrifice", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "M249", "skin": "Aztec", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "Five-SeveN", "skin": "Buddy", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "UMP-45", "skin": "Plastique", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "P250", "skin": "Inferno", "min_wear": 0, "max_wear": 0.68 },
+      { "weapon": "MP5-SD", "skin": "Agent", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "P90", "skin": "Nostalgia", "min_wear": 0, "max_wear": 0.57 },
+      { "weapon": "AUG", "skin": "Death by Puppy", "min_wear": 0, "max_wear": 0.4 },
+      { "weapon": "MP9", "skin": "Hydra", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "FAMAS", "skin": "Commemoration", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "AWP", "skin": "Wildfire", "min_wear": 0.01, "max_wear": 0.7 }
+    ]
+  },
+  "Shattered Web Case": {
+    "Mil-Spec": [
+      { "weapon": "Nova", "skin": "Plume", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "G3SG1", "skin": "Black Sand", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "R8 Revolver", "skin": "Memento", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "M249", "skin": "Warbird", "min_wear": 0.05, "max_wear": 0.65 },
+      { "weapon": "SCAR-20", "skin": "Torn", "min_wear": 0, "max_wear": 0.45 },
+      { "weapon": "MP5-SD", "skin": "Acid Wash", "min_wear": 0, "max_wear": 0.68 },
+      { "weapon": "Dual Berettas", "skin": "Balance", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "PP-Bizon", "skin": "Embargo", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P2000", "skin": "Obsidian", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP7", "skin": "Neon Ply", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AUG", "skin": "Arctic Wolf", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "AK-47", "skin": "Rat Rod", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "Tec-9", "skin": "Decimator", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "SSG 08", "skin": "Bloodshot", "min_wear": 0.14, "max_wear": 0.6 },
+      { "weapon": "SG 553", "skin": "Colony IV", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "MAC-10", "skin": "Stalker", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AWP", "skin": "Containment Breach", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Prisma 2 Case": {
+    "Mil-Spec": [
+      { "weapon": "CZ75-Auto", "skin": "Distressed", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Negev", "skin": "Prototype", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "R8 Revolver", "skin": "Bone Forged", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "MP5-SD", "skin": "Desert Strike", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AUG", "skin": "Tom Cat", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Desert Eagle", "skin": "Blue Ply", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AWP", "skin": "Capillary", "min_wear": 0.05, "max_wear": 0.7 }
+    ],
+    "Restricted": [
+      { "weapon": "P2000", "skin": "Acid Etched", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SCAR-20", "skin": "Enforcer", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Sawed-Off", "skin": "Apocalypto", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Darkwing", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SSG 08", "skin": "Fever Dream", "min_wear": 0, "max_wear": 0.72 }
+    ],
+    "Classified": [
+      { "weapon": "MAG-7", "skin": "Justice", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAC-10", "skin": "Disco Tech", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AK-47", "skin": "Phantom Disruptor", "min_wear": 0, "max_wear": 0.65 }
+    ],
+    "Covert": [
+      { "weapon": "M4A1-S", "skin": "Player Two", "min_wear": 0, "max_wear": 0.84 },
+      { "weapon": "Glock-18", "skin": "Bullet Queen", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Fracture Case": {
+    "Mil-Spec": [
+      { "weapon": "SG 553", "skin": "Ol' Rusty", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Negev", "skin": "Ultralight", "min_wear": 0, "max_wear": 0.79 },
+      { "weapon": "P2000", "skin": "Gnarled", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P250", "skin": "Cassette", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "P90", "skin": "Freight", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "PP-Bizon", "skin": "Runic", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SSG 08", "skin": "Mainframe 001", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "MAG-7", "skin": "Monster Call", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Tec-9", "skin": "Brother", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Galil AR", "skin": "Connexion", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "MP5-SD", "skin": "Kitbash", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "MAC-10", "skin": "Allure", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "XM1014", "skin": "Entombed", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Glock-18", "skin": "Vogue", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "M4A4", "skin": "Tooth Fairy", "min_wear": 0, "max_wear": 0.73 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Legion of Anubis", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Desert Eagle", "skin": "Printstream", "min_wear": 0, "max_wear": 0.8 }
+    ]
+  },
+  "Operation Broken Fang Case": {
+    "Mil-Spec": [
+      { "weapon": "G3SG1", "skin": "Digital Mesh", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "M249", "skin": "Deep Relief", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P250", "skin": "Contaminant", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "CZ75-Auto", "skin": "Vendetta", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "Cocoa Rampage", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "Galil AR", "skin": "Vandal", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP5-SD", "skin": "Condition Zero", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "UMP-45", "skin": "Gold Bismuth", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Dual Berettas", "skin": "Dezastre", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Nova", "skin": "Clear Polymer", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SSG 08", "skin": "Parallax", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AWP", "skin": "Exoskeleton", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "Five-SeveN", "skin": "Fairy Tale", "min_wear": 0.02, "max_wear": 0.9 },
+      { "weapon": "USP-S", "skin": "Monster Mashup", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "M4A4", "skin": "Cyber Security", "min_wear": 0, "max_wear": 0.98 }
+    ],
+    "Covert": [
+      { "weapon": "Glock-18", "skin": "Neo-Noir", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "M4A1-S", "skin": "Printstream", "min_wear": 0, "max_wear": 0.8 }
+    ]
+  },
+  "Snakebite Case": {
+    "Mil-Spec": [
+      { "weapon": "UMP-45", "skin": "Oscillator", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "Nova", "skin": "Windblown", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "M249", "skin": "O.S.I.P.R.", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "CZ75-Auto", "skin": "Circaetus", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "R8 Revolver", "skin": "Junk Yard", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Heavy Metal", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Glock-18", "skin": "Clear Polymer", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "Negev", "skin": "dev_texture", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "MAC-10", "skin": "Button Masher", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P250", "skin": "Cyber Shell", "min_wear": 0, "max_wear": 0.85 },
+      { "weapon": "Desert Eagle", "skin": "Trigger Discipline", "min_wear": 0, "max_wear": 0.97 },
+      { "weapon": "AK-47", "skin": "Slate", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "XM1014", "skin": "XOXO", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "Galil AR", "skin": "Chromatic Aberration", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP9", "skin": "Food Chain", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "M4A4", "skin": "In Living Color", "min_wear": 0, "max_wear": 0.79 },
+      { "weapon": "USP-S", "skin": "The Traitor", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Operation Riptide Case": {
+    "Mil-Spec": [
+      { "weapon": "AUG", "skin": "Plague", "min_wear": 0, "max_wear": 0.76 },
+      { "weapon": "Dual Berettas", "skin": "Tread", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "G3SG1", "skin": "Keeping Tabs", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "MP7", "skin": "Guerrilla", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "PP-Bizon", "skin": "Lumen", "min_wear": 0, "max_wear": 0.77 },
+      { "weapon": "USP-S", "skin": "Black Lotus", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "XM1014", "skin": "Watchdog", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "MAG-7", "skin": "BI83 Spectrum", "min_wear": 0, "max_wear": 0.6 },
+      { "weapon": "FAMAS", "skin": "ZX Spectron", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Five-SeveN", "skin": "Boost Protocol", "min_wear": 0, "max_wear": 0.41 },
+      { "weapon": "MP9", "skin": "Mount Fuji", "min_wear": 0, "max_wear": 0.55 },
+      { "weapon": "M4A4", "skin": "Spider Lily", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "MAC-10", "skin": "Toybox", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Glock-18", "skin": "Snack Attack", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SSG 08", "skin": "Turbo Peek", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Leet Museo", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "Desert Eagle", "skin": "Ocean Drive", "min_wear": 0, "max_wear": 1 }
+    ]
+  },
+  "Dreams & Nightmares Case": {
+    "Mil-Spec": [
+      { "weapon": "Five-SeveN", "skin": "Scrawl", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAC-10", "skin": "Ensnared", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "MAG-7", "skin": "Foresight", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "MP5-SD", "skin": "Necro Jr.", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P2000", "skin": "Lifted Spirits", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SCAR-20", "skin": "Poultrygeist", "min_wear": 0, "max_wear": 0.57 },
+      { "weapon": "Sawed-Off", "skin": "Spirit Board", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "PP-Bizon", "skin": "Space Cat", "min_wear": 0, "max_wear": 0.67 },
+      { "weapon": "G3SG1", "skin": "Dream Glade", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "M4A1-S", "skin": "Night Terror", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "XM1014", "skin": "Zombie Offensive", "min_wear": 0, "max_wear": 0.5 },
+      { "weapon": "USP-S", "skin": "Ticket to Hell", "min_wear": 0, "max_wear": 0.76 }
+    ],
+    "Classified": [
+      { "weapon": "Dual Berettas", "skin": "Melondrama", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "FAMAS", "skin": "Rapid Eye Movement", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP7", "skin": "Abyssal Apparition", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Nightwish", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MP9", "skin": "Starlight Protector", "min_wear": 0, "max_wear": 0.8 }
+    ]
+  },
+  "Recoil Case": {
+    "Mil-Spec": [
+      { "weapon": "Negev", "skin": "Drop Me", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Galil AR", "skin": "Destroyer", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "UMP-45", "skin": "Roadblock", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAC-10", "skin": "Monkeyflage", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "FAMAS", "skin": "Meow 36", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "Glock-18", "skin": "Winterized", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "M4A4", "skin": "Poly Mag", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "M249", "skin": "Downtown", "min_wear": 0, "max_wear": 0.65 },
+      { "weapon": "P90", "skin": "Vent Rush", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Dual Berettas", "skin": "Flora Carnivora", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Dragon Tech", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "R8 Revolver", "skin": "Crazy 8", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Classified": [
+      { "weapon": "P250", "skin": "Visions", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "Sawed-Off", "skin": "Kiss♥Love", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "AK-47", "skin": "Ice Coaled", "min_wear": 0, "max_wear": 0.77 }
+    ],
+    "Covert": [
+      { "weapon": "AWP", "skin": "Chromatic Aberration", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "USP-S", "skin": "Printstream", "min_wear": 0, "max_wear": 0.85 }
+    ]
+  },
+  "Revolution Case": {
+    "Mil-Spec": [
+      { "weapon": "MP9", "skin": "Featherweight", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "MAG-7", "skin": "Insomnia", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SCAR-20", "skin": "Fragments", "min_wear": 0, "max_wear": 0.78 },
+      { "weapon": "P250", "skin": "Re.built", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "MP5-SD", "skin": "Liquidation", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "SG 553", "skin": "Cyberforce", "min_wear": 0, "max_wear": 0.9 },
+      { "weapon": "Tec-9", "skin": "Rebel", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Restricted": [
+      { "weapon": "M4A1-S", "skin": "Emphorosaur-S", "min_wear": 0, "max_wear": 0.8 },
+      { "weapon": "Glock-18", "skin": "Umbral Rabbit", "min_wear": 0, "max_wear": 0.75 },
+      { "weapon": "MAC-10", "skin": "Sakkaku", "min_wear": 0.21, "max_wear": 0.79 },
+      { "weapon": "R8 Revolver", "skin": "Banana Cannon", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P90", "skin": "Neoqueen", "min_wear": 0, "max_wear": 0.6 }
+    ],
+    "Classified": [
+      { "weapon": "AWP", "skin": "Duality", "min_wear": 0, "max_wear": 0.7 },
+      { "weapon": "UMP-45", "skin": "Wild Child", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "P2000", "skin": "Wicked Sick", "min_wear": 0, "max_wear": 1 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Head Shot", "min_wear": 0, "max_wear": 1 },
+      { "weapon": "M4A4", "skin": "Temukau", "min_wear": 0, "max_wear": 0.8 }
+    ]
+  },
+  "Kilowatt Case": {
+    "Mil-Spec": [
+      { "weapon": "XM1014", "skin": "Irezumi", "min-wear": 0, "max-wear": 0.8 },
+      { "weapon": "UMP-45", "skin": "Motorized", "min-wear": 0, "max-wear": 0.8 },
+      { "weapon": "Tec-9", "skin": "Slag", "min-wear": 0, "max-wear": 0.9 },
+      { "weapon": "SSG 08", "skin": "Dezastre", "min-wear": 0, "max-wear": 1 },
+      { "weapon": "Nova", "skin": "Dark Sigil", "min-wear": 0, "max-wear": 0.7 },
+      { "weapon": "MAC-10", "skin": "Light Box", "min-wear": 0, "max-wear": 1 },
+      { "weapon": "Dual Berettas", "skin": "Hideout", "min-wear": 0, "max-wear": 0.7 }
+    ],
+    "Restricted": [
+      { "weapon": "Sawed-Off", "skin": "Analog Input", "min-wear": 0, "max-wear": 0.62 },
+      { "weapon": "MP7", "skin": "Just Smile", "min-wear": 0, "max-wear": 1 },
+      { "weapon": "Five-SeveN", "skin": "Hybrid", "min-wear": 0, "max-wear": 1 },
+      { "weapon": "M4A4", "skin": "Etch Lord", "min-wear": 0, "max-wear": 1 },
+      { "weapon": "Glock-18", "skin": "Block-18", "min-wear": 0, "max-wear": 0.67 }
+    ],
+    "Classified": [
+      { "weapon": "USP-S", "skin": "Jawbreaker", "min-wear": 0, "max-wear": 1 },
+      { "weapon": "Zeus x27", "skin": "Olympus", "min-wear": 0, "max-wear": 0.67 },
+      { "weapon": "M4A1-S", "skin": "Black Lotus", "min-wear": 0, "max-wear": 0.7 }
+    ],
+    "Covert": [
+      { "weapon": "AK-47", "skin": "Inheritance", "min-wear": 0, "max-wear": 0.8 },
+      {
+        "weapon": "AWP",
+        "skin": "Chrome Cannon",
+        "min-wear": 0,
+        "max-wear": 1,
+        "Prices": { "Factory New": 328, "Minimal Wear": 176, "Field-Tested": 124.25, "Well-Worn": 89.5, "Battle-Scarred": 76.66 },
+        "Last Modified": { "Factory New": 1710267921259, "Minimal Wear": 1710267921259, "Field-Tested": 1710267921259, "Well-Worn": 1710267921259, "Battle-Scarred": 1710267921259 }
+      }
+    ]
+  }
+}

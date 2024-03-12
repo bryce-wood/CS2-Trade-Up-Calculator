@@ -1,7 +1,8 @@
 const puppeteer = require('puppeteer');
 const { setTimeout } = require('timers/promises');
-const skins = require('./cs2_skins_database.json');
-
+const fs = require('fs');
+const skinsData = fs.readFileSync('./cs2_skins_database.json');
+const skins = JSON.parse(skinsData);
 var requestCount = 0;
 // console.log(skins['Kilowatt Case'].Classified[1]);
 
@@ -29,12 +30,34 @@ let scarEnforcer = {
 
 // 9x Nova Gila, 1x SCAR-20 Enforcer, all 0.09 wear
 // expected output: 0.045 mecha industries, 0.0675 shallow grave, 0.063 wasteland princess, 0.0585 phantom disruptor, 0.09 disco tech, 0.09 justice
-inSkin = [novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, scarEnforcer];
-//let outSkins, outWears = calculateOutcome(inSkin);
-//console.log(outSkins);
-//console.log(outWears);
+// inSkin = [novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, novaGila, scarEnforcer];
+// let outSkins, outWears = calculateOutcome(inSkin);
+// console.log(outSkins);
+// console.log(outWears);
 
-singleCollectionTradeups('Kilowatt Case');
+//singleCollectionTradeups('Kilowatt Case');
+
+// this is how prices should be updated
+skins['Kilowatt Case']['Covert'][1]['Prices'] = {};
+skins['Kilowatt Case']['Covert'][1]['Prices']['Factory New'] = 328.00;
+skins['Kilowatt Case']['Covert'][1]['Prices']['Minimal Wear'] = 176.00;
+skins['Kilowatt Case']['Covert'][1]['Prices']['Field-Tested'] = 124.25;
+skins['Kilowatt Case']['Covert'][1]['Prices']['Well-Worn'] = 89.50;
+skins['Kilowatt Case']['Covert'][1]['Prices']['Battle-Scarred'] = 76.66;
+
+skins['Kilowatt Case']['Covert'][1]['Last Modified'] = {};
+skins['Kilowatt Case']['Covert'][1]['Last Modified']['Factory New'] = Date.now();
+skins['Kilowatt Case']['Covert'][1]['Last Modified']['Minimal Wear'] = Date.now();
+skins['Kilowatt Case']['Covert'][1]['Last Modified']['Field-Tested'] = Date.now();
+skins['Kilowatt Case']['Covert'][1]['Last Modified']['Well-Worn'] = Date.now();
+skins['Kilowatt Case']['Covert'][1]['Last Modified']['Battle-Scarred'] = Date.now();
+// for (const collection of skins) {
+//     for (const quality of collection) {
+//         for (const skin of quality) {
+//             //skin.push();
+//         }
+//     }
+// }
 
 // to retrieve all items once, with 5 second delay between items, it'll take a little under 3 hours
 // I think that the delay can be as little as 3 seconds, which would take a little under 2 hours
@@ -47,6 +70,8 @@ function singleQualityTradeups() {
     // combine tradeups across all collections, but only with skins from a single quality
 }
 
+// rewrite to use smaller functions and reference prices in database when possible
+// for prices in database log the price and the time submitted
 async function singleCollectionTradeups(collection) {
     // with given collection name, calculate profitable tradeups within the single collection
     // start by gathering the price and target wear of all wear jumps of every highest tier item (skins[collection].length-1)
@@ -93,10 +118,60 @@ async function singleCollectionTradeups(collection) {
     }
 
     // for each grade in the collection find the max, min, and average price
-    
+    // [[grade1bs, grade1ww, etc], [grade2bs, grade3ww]]
+    let mins = []; 
+    let maxes = [];
+    let averages = [];
+    for (const grade of collectionPrices) {
+        let maxNum = Number.MAX_SAFE_INTEGER;
+        let gradeMins = [maxNum, maxNum, maxNum, maxNum, maxNum]; // [bsMin, wwMin, ftMin, mwMin, fnMin]
+        let gradeMaxes = [0, 0, 0, 0, 0];
+        let gradeSums = [0, 0, 0, 0, 0];
+        let gradeCount = [0, 0, 0, 0, 0];
+        let gradeAverages = [0, 0, 0, 0, 0];
+        for (const currentSkin of grade) {
+            for (let i = 0; i < currentSkin.length; i++) {
+                if (currentSkin[i] == -1) {
+                    continue;
+                }
+                gradeCount[i]++;
+                if (currentSkin[i] < gradeMins[i]) {
+                    gradeMins[i] = currentSkin[i];
+                }
+                if (currentSkin[i] > gradeMaxes[i]) {
+                    gradeMaxes[i] = currentSkin[i];
+                }
+                gradeSums[i] += currentSkin[i];
+            }
+        }
+        for (let i = 0; i < gradeAverages.length; i++) {
+            gradeAverages[i] = gradeSums[i] / gradeCount[i];
+        }
+        mins.push(gradeMins);
+        maxes.push(gradeMaxes);
+        averages.push(gradeAverages);
+    }
+    console.log(mins);
+    console.log(maxes);
+    console.log(averages);
     // if 10*price < avgUpTierProfit, log it as a profitable tradeup and calculate profit and chance of profit for each item
-
-    // repeat down to the lowest tier (will prob want a for loop)
+    for (let i = 0; i < averages.length-1; i++) {
+        for (let j = 0; j < wears.length; j++) {
+            // includes 15% cut steam takes
+            if (mins[i][j]*10 < maxes[i+1][j]*0.85) {
+                // log potentially profitable tradeup
+                console.log(`Getting ${wears[j]} Grade ${i} Skins from the ${colllection} for $${mins[i][j]} each and trade-up to something worth $${maxes[i+1][j]} can profit`);
+            }
+            if (mins[i][j]*10 < averages[i+1][j]*0.85) {
+                // log typicaly profitable tradeup
+                console.log(`Getting ${wears[j]} Grade ${i} Skins from the ${colllection} for $${mins[i][j]} each and trade-up to something worth $${averages[i+1][j]} typically profits`);
+            }
+            if (mins[i][j]*10 < mins[i+1][j]*0.85) {
+                // log always profitable tradeup ***
+                console.log(`Getting ${wears[j]} Grade ${i} Skins from the ${colllection} for $${mins[i][j]} each and trade-up to something worth $${mins[i+1][j]} always profits`);
+            }
+        }
+    }
 
     return 0;
 }
@@ -255,3 +330,10 @@ async function retrievePrice(url) {
 }
 
 //console.log("number of requests: " + requestCount);
+
+const skinsString = JSON.stringify(skins);
+
+fs.writeFileSync('price database.json', skinsString, 'utf-8', (err) => {
+  if (err) throw err;
+  console.log('Data added to file');
+});
