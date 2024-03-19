@@ -3,6 +3,7 @@ const { setTimeout } = require("timers/promises");
 const fs = require("fs");
 const skinsData = fs.readFileSync("./price database.json");
 const skins = JSON.parse(skinsData);
+const wears = ["Battle-Scarred", "Well-Worn", "Field-Tested", "Minimal Wear", "Factory New"];
 var os = require("os");
 var requestCount = 0;
 // console.log(skins['Kilowatt Case'].Classified[1]);
@@ -36,9 +37,9 @@ let scarEnforcer = {
 // console.log(outSkins);
 // console.log(outWears);
 
-//singleCollectionTradeups('Kilowatt Case');
+singleCollectionTradeups('Kilowatt Case');
 
-updateCollectionPrices("Kilowatt Case");
+//updateCollectionPrices("Kilowatt Case");
 
 async function updateAllPrices() {
   let allCollections = [
@@ -170,6 +171,53 @@ function singleQualityTradeups() {
   // combine tradeups across all collections, but only with skins from a single quality
 }
 
+function singleCollectionTradeups(collection) {
+    // retrieves all skins from the collection from the .json and returns an array with skin objects at the ends
+    let collectionSkins = retrieveCollectionSkins(collection);
+    // the cheapest skin of the lower quality is always the best option for tradeups of the same collection
+    let cheapestIndexes = findCheapestIndexes(collectionSkins);
+}
+
+// retrieves the indexes of the cheapest skin in arrays, expects it in the format retrieveCollectionSkins outputs
+function findCheapestIndexes(collectionSkins) {
+    let cheapestIndexes = [];
+    for (const quality in collectionSkins) {
+        let wearIndexes = [];
+        // for each wear in a quality, get the cheapest index
+        for (const wear in wears) {
+            let cheapestIndex = -1;
+            let cheapestPrice;
+            for (const skin in collectionSkins[quality]) {
+                // TODO: if the cheapestIndex is -1, and this one is real, make it the cheapest, if it is not real, skip it
+                let skinPrice = collectionSkins[quality][skin]['Prices'][wear];
+                if (skinPrice < cheapestPrice) {
+                    cheapestIndex = skin;
+                    cheapestPrice = skinPrice;
+                }
+            }
+            // for this wear, add it to the wearIndexes
+            wearIndexes.push(cheapestIndex);
+        }
+        // for this quality, add all of the wearIndexes
+        cheapestIndexes.push(wearIndexes);
+    }
+    return cheapestIndexes;
+}
+
+// retrieves all skins from the collection from the .json and returns an array with skin objects at the ends
+// returns collectionSkins of length = num of qualities in collection, that contains arrays for each quality that ontains skin objects for each skin in that quality
+function retrieveCollectionSkins(collection) {
+    let collectionSkins = [];
+    for (const quality in skins[collection]) {
+        let qualitySkins = [];
+        for (const skin in skins[collection][quality]) {
+            qualitySkins.push(skins[collection][quality][skin]);
+        }
+        collectionSkins.push(qualitySkins);
+    }
+    return collectionSkins;
+}
+/*
 // rewrite to use smaller functions and reference prices in database when possible
 // for prices in database log the price and the time submitted
 async function singleCollectionTradeups(collection) {
@@ -275,6 +323,7 @@ async function singleCollectionTradeups(collection) {
 
   return 0;
 }
+*/
 
 // given 10 "inputSkins" calculate the probability and wear of each skin from the trade-up
 // inputSkins will be a list of Arrays, each array will be constructed like this: {collection, quality, index, wear}
