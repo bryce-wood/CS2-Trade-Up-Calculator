@@ -175,33 +175,75 @@ function singleCollectionTradeups(collection) {
     // retrieves all skins from the collection from the .json and returns an array with skin objects at the ends
     let collectionSkins = retrieveCollectionSkins(collection);
     // the cheapest skin of the lower quality is always the best option for tradeups of the same collection
-    let cheapestIndexes = findCheapestIndexes(collectionSkins);
+    let cheapestPrices = findCheapestPrices(collectionSkins);
+    // gets the average price of each collection
+    let averagePrices = calculateAveragePrices(collectionSkins);
+    // calculate average profit (avg_out_cost - in_cost)
+    console.log(cheapestPrices[1][0] - averagePrices[1][0]); // restricted fn profit
+    // break down price per output skin
+    // only list profitable outputs
+    // avg profit + chance to profit \n skin1 + skin1_price + skin1_profit \n skin2 + ...
+
 }
 
-// retrieves the indexes of the cheapest skin in arrays, expects it in the format retrieveCollectionSkins outputs
-function findCheapestIndexes(collectionSkins) {
-    let cheapestIndexes = [];
+// when given an array of skins of qualities, finds the average price of each wear tier for a quality
+// returns prices in the format of [[fn, mw, ft, ww, bs], [fn, ...], ...] or [Mil-Spec, Restricted, ...]
+function calculateAveragePrices(collectionSkins) {
+  let averagePrices = [];
+  for (const quality in collectionSkins) {
+    // will have all 5 wears
+    let qualityAverages = [];
+    for (const wear in wears) {
+      // will have just this wear
+      let sum = 0;
+      let count = 0;
+      for (const skin in collectionSkins[quality]) {
+        count++;
+        sum += collectionSkins[quality][skin]['Prices'][wear];
+      }
+      qualityAverages.push(sum/count);
+    }
+    averagePrices.push(qualityAverages);
+  }
+  return averagePrices;
+}
+
+// retrieves the prices of the cheapest skin in arrays, expects it in the format retrieveCollectionSkins outputs
+// returns prices in the format of [[fn, mw, ft, ww, bs], [fn, ...], ...] or [Mil-Spec, Restricted, ...]
+function findCheapestPrices(collectionSkins) {
+    let cheapestPrices = [];
     for (const quality in collectionSkins) {
-        let wearIndexes = [];
-        // for each wear in a quality, get the cheapest index
+        let wearPrices = [];
+        // for each wear in a quality, get the cheapest price
         for (const wear in wears) {
-            let cheapestIndex = -1;
             let cheapestPrice;
             for (const skin in collectionSkins[quality]) {
-                // TODO: if the cheapestIndex is -1, and this one is real, make it the cheapest, if it is not real, skip it
-                let skinPrice = collectionSkins[quality][skin]['Prices'][wear];
-                if (skinPrice < cheapestPrice) {
-                    cheapestIndex = skin;
-                    cheapestPrice = skinPrice;
+                if (cheapestPrice.length < 1) {
+                  try {
+                    cheapestPrice = collectionSkins[quality][skin]['Prices'][wear];
+                    continue;
+                  } catch (error) {
+                    continue;
+                  }
+                } else {
+                  let skinPrice;
+                  try {
+                    skinPrice = collectionSkins[quality][skin]['Prices'][wear];
+                    if (skinPrice < cheapestPrice) {
+                        cheapestPrice = skinPrice;
+                    }
+                  } catch (error) {
+                    continue;
+                  }
                 }
             }
-            // for this wear, add it to the wearIndexes
-            wearIndexes.push(cheapestIndex);
+            // for this wear, add it to the wearPrices
+            wearPrices.push(cheapestPrice);
         }
-        // for this quality, add all of the wearIndexes
-        cheapestIndexes.push(wearIndexes);
+        // for this quality, add all of the wearPrices
+        cheapestPrices.push(wearPrices);
     }
-    return cheapestIndexes;
+    return cheapestPrices;
 }
 
 // retrieves all skins from the collection from the .json and returns an array with skin objects at the ends
