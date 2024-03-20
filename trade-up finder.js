@@ -4,6 +4,85 @@ const fs = require("fs");
 const skinsData = fs.readFileSync("./price database.json");
 const skins = JSON.parse(skinsData);
 const wears = ["Battle-Scarred", "Well-Worn", "Field-Tested", "Minimal Wear", "Factory New"];
+const allCollections = [
+  "Anubis Collection",
+  "Ancient Collection",
+  "Assault Collection",
+  "Aztec Collection",
+  "Baggage Collection",
+  "Bank Collection",
+  "Blacksite Collection",
+  "Cache Collection",
+  "Canals Collection",
+  "Chop Shop Collection",
+  "Cobblestone Collection",
+  "Dust Collection",
+  "Dust II Collection",
+  "2021 Dust II Collection",
+  "Gods and Monsters Collection",
+  "Havoc Collection",
+  "Inferno Collection",
+  "2018 Inferno Collection",
+  "Italy Collection",
+  "Lake Collection",
+  "Militia Collection",
+  "Mirage Collection",
+  "2021 Mirage Collection",
+  "Norse Collection",
+  "Nuke Collection",
+  "2018 Nuke Collection",
+  "Office Collection",
+  "Overpass Collection",
+  "Rising Sun Collection",
+  "Safehouse Collection",
+  "St. Marc Collection",
+  "Train Collection",
+  "2021 Train Collection",
+  "Vertigo Collection",
+  "2021 Vertigo Collection",
+  "Alpha Collection",
+  "Control Collection",
+  "CS:GO Weapon Case",
+  "eSports 2013 Case",
+  "Operation Bravo Case",
+  "CS:GO Weapon Case 2",
+  "Winter Offensive Weapon Case",
+  "eSports 2013 Winter Case",
+  "CS:GO Weapon Case 3",
+  "Operation Phoenix Weapon Case",
+  "Huntsman Weapon Case",
+  "Operation Breakout Weapon Case",
+  "eSports 2014 Summer Case",
+  "Operation Vanguard Weapon Case",
+  "Chroma Case",
+  "Chroma 2 Case",
+  "Falchion Case",
+  "Shadow Case",
+  "Revolver Case",
+  "Operation Wildfire Case",
+  "Chroma 3 Case",
+  "Gamma Case",
+  "Gamma 2 Case",
+  "Glove Case",
+  "Spectrum Case",
+  "Operation Hydra Case",
+  "Spectrum 2 Case",
+  "Clutch Case",
+  "Horizon Case",
+  "Danger Zone Case",
+  "Prisma Case",
+  "CS20 Case",
+  "Shattered Web Case",
+  "Prisma 2 Case",
+  "Fracture Case",
+  "Operation Broken Fang Case",
+  "Snakebite Case",
+  "Operation Riptide Case",
+  "Dreams & Nightmares Case",
+  "Recoil Case",
+  "Revolution Case",
+  "Kilowatt Case",
+];
 var os = require("os");
 var requestCount = 0;
 // console.log(skins['Kilowatt Case'].Classified[1]);
@@ -42,85 +121,6 @@ singleCollectionTradeups('Kilowatt Case');
 //updateCollectionPrices("Kilowatt Case");
 
 async function updateAllPrices() {
-  let allCollections = [
-    "Anubis Collection",
-    "Ancient Collection",
-    "Assault Collection",
-    "Aztec Collection",
-    "Baggage Collection",
-    "Bank Collection",
-    "Blacksite Collection",
-    "Cache Collection",
-    "Canals Collection",
-    "Chop Shop Collection",
-    "Cobblestone Collection",
-    "Dust Collection",
-    "Dust II Collection",
-    "2021 Dust II Collection",
-    "Gods and Monsters Collection",
-    "Havoc Collection",
-    "Inferno Collection",
-    "2018 Inferno Collection",
-    "Italy Collection",
-    "Lake Collection",
-    "Militia Collection",
-    "Mirage Collection",
-    "2021 Mirage Collection",
-    "Norse Collection",
-    "Nuke Collection",
-    "2018 Nuke Collection",
-    "Office Collection",
-    "Overpass Collection",
-    "Rising Sun Collection",
-    "Safehouse Collection",
-    "St. Marc Collection",
-    "Train Collection",
-    "2021 Train Collection",
-    "Vertigo Collection",
-    "2021 Vertigo Collection",
-    "Alpha Collection",
-    "Control Collection",
-    "CS:GO Weapon Case",
-    "eSports 2013 Case",
-    "Operation Bravo Case",
-    "CS:GO Weapon Case 2",
-    "Winter Offensive Weapon Case",
-    "eSports 2013 Winter Case",
-    "CS:GO Weapon Case 3",
-    "Operation Phoenix Weapon Case",
-    "Huntsman Weapon Case",
-    "Operation Breakout Weapon Case",
-    "eSports 2014 Summer Case",
-    "Operation Vanguard Weapon Case",
-    "Chroma Case",
-    "Chroma 2 Case",
-    "Falchion Case",
-    "Shadow Case",
-    "Revolver Case",
-    "Operation Wildfire Case",
-    "Chroma 3 Case",
-    "Gamma Case",
-    "Gamma 2 Case",
-    "Glove Case",
-    "Spectrum Case",
-    "Operation Hydra Case",
-    "Spectrum 2 Case",
-    "Clutch Case",
-    "Horizon Case",
-    "Danger Zone Case",
-    "Prisma Case",
-    "CS20 Case",
-    "Shattered Web Case",
-    "Prisma 2 Case",
-    "Fracture Case",
-    "Operation Broken Fang Case",
-    "Snakebite Case",
-    "Operation Riptide Case",
-    "Dreams & Nightmares Case",
-    "Recoil Case",
-    "Revolution Case",
-    "Kilowatt Case",
-  ];
   for (const collection of allCollections) {
     updateCollectionPrices(collection);
   }
@@ -160,30 +160,66 @@ async function updateCollectionPrices(collection) {
   }
 }
 
-// to retrieve all items once, with 5 second delay between items, it'll take a little under 3 hours
-// I think that the delay can be as little as 3 seconds, which would take a little under 2 hours
 function allTradeups() {
-  // find profitable tradeups across all collections and all rarities
-  // *** NEEDS TO BE EXTREMELY OPTIMIZED ***
+  for (const collection of allCollections) {
+    console.log("Trade-Ups for " + collection);
+    singleCollectionTradeups(collection);
+  }
 }
 
 function singleQualityTradeups() {
   // combine tradeups across all collections, but only with skins from a single quality
 }
 
-function singleCollectionTradeups(collection) {
-    // retrieves all skins from the collection from the .json and returns an array with skin objects at the ends
-    let collectionSkins = retrieveCollectionSkins(collection);
-    // the cheapest skin of the lower quality is always the best option for tradeups of the same collection
-    let cheapestPrices = findCheapestPrices(collectionSkins);
-    // gets the average price of each collection
-    let averagePrices = calculateAveragePrices(collectionSkins);
-    // calculate average profit (avg_out_cost - in_cost)
-    console.log(cheapestPrices[1][0] - averagePrices[1][0]); // restricted fn profit
-    // break down price per output skin
-    // only list profitable outputs
-    // avg profit + chance to profit \n skin1 + skin1_price + skin1_profit \n skin2 + ...
+// acts similarly to singleCollectionTradeups, but also recognizes min-wear and max-wear, making wear changes possible and more chances to profit
+function singleCollectionTradeupsSmart(collection) {
+  // if min-wear != 0 || max-wear != 1, find potential wear jumps and avg input wear required to do the jump
+  // also if max-wear < 1 then need to notate the increased avg in wear needed to get to wears
+  // otherwise operates the same and singleCollectionTradeups
+}
 
+// *** currently ignorant of min-wear and max-wear, assumes bs makes a bs, mw makes a mw, etc, so it may be incorrect ***
+// outputs profitable trade-ups within a single collection
+function singleCollectionTradeups(collection) {
+    let collectionSkins = retrieveCollectionSkins(collection);
+    // returns the actual prices instead of indexes of the cheapest prices for clarity and similarity to other arrays
+    let cheapestPrices = findCheapestPrices(collectionSkins);
+    let averagePrices = calculateAveragePrices(collectionSkins);
+    let averageProfits = calculateAverageProfit(cheapestPrices, averagePrices);
+    // only list profitable (on averaged) outputs
+    for (const quality in averageProfits) {
+      for (const wear in averageProfits) {
+        if (averageProfits[quality][wear] > 0) {
+          // TODO: output this to a file that can be retrieved after the program expires
+          console.log(`Profitable Tradeup: tradeup item quality ${quality+1} and wear ${wear} 10 * ${cheapestPrices[quality][wear]} < ${averagePrices[quality+1][wear]}, which profits ${averageProfits[quality][wear]}`);
+          let skinIndex = findIndexOfPrice(cheapestPrices[quality][wear], collectionSkins, quality, wear);
+          console.log(collectionSkins[quality][skinIndex]);
+        }
+      }
+    }
+}
+
+function findIndexOfPrice(price, collectionSkins, quality, wear) {
+  for (let i = 0; i < collectionSkins[quality].length; i++) {
+    let skinPrice = collectionSkins[quality][i]['Prices'][wear];
+    if (skinPrice == price) {
+      return i;
+    }
+  }
+}
+
+// expects outputs of findCheapestPrices and calculateAveragePrices
+// returns an array of profits in the format of [[proft_fn, profit_mw, ...], [profit_fn, ...]]
+function calculateAverageProfit(cheapestPrices, averagePrices) {
+  let averageProfits = [];
+  for (let i = 1; i < averagePrices.length; i++) {
+    let qualityProfits = []
+    for (const wear in averagePrices[i]) {
+      let profit = averagePrices[i][wear] - (10 * cheapestPrices[i-1][wear]);
+      qualityProfits.push(profit);
+    }
+    averageProfits.push(qualityProfits);
+  }
 }
 
 // when given an array of skins of qualities, finds the average price of each wear tier for a quality
@@ -259,113 +295,6 @@ function retrieveCollectionSkins(collection) {
     }
     return collectionSkins;
 }
-/*
-// rewrite to use smaller functions and reference prices in database when possible
-// for prices in database log the price and the time submitted
-async function singleCollectionTradeups(collection) {
-  // with given collection name, calculate profitable tradeups within the single collection
-  // start by gathering the price and target wear of all wear jumps of every highest tier item (skins[collection].length-1)
-  let wears = ["Battle-Scarred", "Well-Worn", "Field-Tested", "Minimal Wear", "Factory New"];
-  let collectionSkins = [];
-  for (const grade in skins[collection]) {
-    let gradeGroup = [];
-    for (const skin of skins[collection][grade]) {
-      gradeGroup.push(skin);
-    }
-    collectionSkins.push(gradeGroup);
-  }
-
-  let collectionPrices = [];
-  for (const grade of collectionSkins) {
-    let gradeGroup = [];
-    for (const currentSkin of grade) {
-      let skinGroup = [];
-      for (const wear of wears) {
-        // if skin cannot be x wear, dont search for it
-        let link = `https://steamcommunity.com/market/listings/730/${currentSkin.weapon} | ${currentSkin.skin} (${wear})`;
-        console.log(link);
-        let price = await retrievePrice(link, 3); // can be extremely optimized with proxies
-        requestCount++;
-        skinGroup.push(price);
-      }
-      gradeGroup.push(skinGroup);
-    }
-    collectionPrices.push(gradeGroup);
-  }
-
-  console.log(collectionPrices);
-  // clean up prices
-  for (let i = 0; i < collectionPrices.length; i++) {
-    for (let j = 0; j < collectionPrices[i].length; j++) {
-      for (let k = 0; k < collectionPrices[i][j].length; k++) {
-        if (!(typeof collectionPrices[i][j][k] === "number")) {
-          // if not a number (-1) then must be in the format $X.XX
-          // remove dollar sign and parse float
-          collectionPrices[i][j][k] = parseFloat(collectionPrices[i][j][k].substring(1));
-        }
-      }
-    }
-  }
-
-  // for each grade in the collection find the max, min, and average price
-  // [[grade1bs, grade1ww, etc], [grade2bs, grade3ww]]
-  let mins = [];
-  let maxes = [];
-  let averages = [];
-  for (const grade of collectionPrices) {
-    let maxNum = Number.MAX_SAFE_INTEGER;
-    let gradeMins = [maxNum, maxNum, maxNum, maxNum, maxNum]; // [bsMin, wwMin, ftMin, mwMin, fnMin]
-    let gradeMaxes = [0, 0, 0, 0, 0];
-    let gradeSums = [0, 0, 0, 0, 0];
-    let gradeCount = [0, 0, 0, 0, 0];
-    let gradeAverages = [0, 0, 0, 0, 0];
-    for (const currentSkin of grade) {
-      for (let i = 0; i < currentSkin.length; i++) {
-        if (currentSkin[i] == -1) {
-          continue;
-        }
-        gradeCount[i]++;
-        if (currentSkin[i] < gradeMins[i]) {
-          gradeMins[i] = currentSkin[i];
-        }
-        if (currentSkin[i] > gradeMaxes[i]) {
-          gradeMaxes[i] = currentSkin[i];
-        }
-        gradeSums[i] += currentSkin[i];
-      }
-    }
-    for (let i = 0; i < gradeAverages.length; i++) {
-      gradeAverages[i] = gradeSums[i] / gradeCount[i];
-    }
-    mins.push(gradeMins);
-    maxes.push(gradeMaxes);
-    averages.push(gradeAverages);
-  }
-  console.log(mins);
-  console.log(maxes);
-  console.log(averages);
-  // if 10*price < avgUpTierProfit, log it as a profitable tradeup and calculate profit and chance of profit for each item
-  for (let i = 0; i < averages.length - 1; i++) {
-    for (let j = 0; j < wears.length; j++) {
-      // includes 15% cut steam takes
-      if (mins[i][j] * 10 < maxes[i + 1][j] * 0.85) {
-        // log potentially profitable tradeup
-        console.log(`Getting ${wears[j]} Grade ${i} Skins from the ${colllection} for $${mins[i][j]} each and trade-up to something worth $${maxes[i + 1][j]} can profit`);
-      }
-      if (mins[i][j] * 10 < averages[i + 1][j] * 0.85) {
-        // log typicaly profitable tradeup
-        console.log(`Getting ${wears[j]} Grade ${i} Skins from the ${colllection} for $${mins[i][j]} each and trade-up to something worth $${averages[i + 1][j]} typically profits`);
-      }
-      if (mins[i][j] * 10 < mins[i + 1][j] * 0.85) {
-        // log always profitable tradeup ***
-        console.log(`Getting ${wears[j]} Grade ${i} Skins from the ${colllection} for $${mins[i][j]} each and trade-up to something worth $${mins[i + 1][j]} always profits`);
-      }
-    }
-  }
-
-  return 0;
-}
-*/
 
 // given 10 "inputSkins" calculate the probability and wear of each skin from the trade-up
 // inputSkins will be a list of Arrays, each array will be constructed like this: {collection, quality, index, wear}
