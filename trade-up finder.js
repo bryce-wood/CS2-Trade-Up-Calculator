@@ -116,29 +116,34 @@ let scarEnforcer = {
 // console.log(outSkins);
 // console.log(outWears);
 
-singleCollectionTradeups('Kilowatt Case');
+//singleCollectionTradeups('Kilowatt Case');
 
-//updateCollectionPrices("Kilowatt Case");
-
-async function updateAllPrices() {
+// minTimeSinceLastModified default value is 1 day in milliseconds
+async function updateAllPrices(minTimeSinceLastModified = 86_400_000) {
   for (const collection of allCollections) {
-    updateCollectionPrices(collection);
+    await updateCollectionPrices(collection, minTimeSinceLastModified);
   }
 }
 
-async function updateCollectionPrices(collection) {
+// minTimeSinceLastModified default value is 1 day in milliseconds
+async function updateCollectionPrices(collection, minTimeSinceLastModified = 86_400_000) {
   let wears = ["Factory New", "Minimal Wear", "Field-Tested", "Well-Worn", "Battle-Scarred"];
   for (const quality in skins[collection]) {
     for (const skin in skins[collection][quality]) {
       for (let i = 0; i < wears.length; i++) {
+        try {
+          if (Date.now() - skins[collection][quality][skin]["Last Modified"][wears[i]] < minTimeSinceLastModified) {
+            continue;
+          }
+        } catch (error) {}
         // url format: `https://steamcommunity.com/market/listings/730/${weapon} | ${skin} (${wear})`
         let weapon = skins[collection][quality][skin].weapon;
         let gunSkin = skins[collection][quality][skin].skin;
         let wear = wears[i];
         let link = `https://steamcommunity.com/market/listings/730/${weapon} | ${gunSkin} (${wear})`;
         let price = await retrievePrice(link);
-        // upon retrieval wait 3 seconds so steam doesn't hate us
-        await setTimeout(3000);
+        // upon retrieval wait 10 seconds so steam doesn't hate us
+        await setTimeout(10000);
         // if no price is found, skip to the next skin
         if (price == -1) {
           continue;
@@ -181,27 +186,31 @@ function singleCollectionTradeupsSmart(collection) {
 // *** currently ignorant of min-wear and max-wear, assumes bs makes a bs, mw makes a mw, etc, so it may be incorrect ***
 // outputs profitable trade-ups within a single collection
 function singleCollectionTradeups(collection) {
-    let collectionSkins = retrieveCollectionSkins(collection);
-    // returns the actual prices instead of indexes of the cheapest prices for clarity and similarity to other arrays
-    let cheapestPrices = findCheapestPrices(collectionSkins);
-    let averagePrices = calculateAveragePrices(collectionSkins);
-    let averageProfits = calculateAverageProfit(cheapestPrices, averagePrices);
-    // only list profitable (on averaged) outputs
-    for (const quality in averageProfits) {
-      for (const wear in averageProfits) {
-        if (averageProfits[quality][wear] > 0) {
-          // TODO: output this to a file that can be retrieved after the program expires
-          console.log(`Profitable Tradeup: tradeup item quality ${quality+1} and wear ${wear} 10 * ${cheapestPrices[quality][wear]} < ${averagePrices[quality+1][wear]}, which profits ${averageProfits[quality][wear]}`);
-          let skinIndex = findIndexOfPrice(cheapestPrices[quality][wear], collectionSkins, quality, wear);
-          console.log(collectionSkins[quality][skinIndex]);
-        }
+  let collectionSkins = retrieveCollectionSkins(collection);
+  // returns the actual prices instead of indexes of the cheapest prices for clarity and similarity to other arrays
+  let cheapestPrices = findCheapestPrices(collectionSkins);
+  let averagePrices = calculateAveragePrices(collectionSkins);
+  let averageProfits = calculateAverageProfit(cheapestPrices, averagePrices);
+  // only list profitable (on averaged) outputs
+  for (const quality in averageProfits) {
+    for (const wear in averageProfits) {
+      if (averageProfits[quality][wear] > 0) {
+        // TODO: output this to a file that can be retrieved after the program expires
+        console.log(
+          `Profitable Tradeup: tradeup item quality ${quality + 1} and wear ${wear} 10 * ${cheapestPrices[quality][wear]} < ${averagePrices[quality + 1][wear]}, which profits ${
+            averageProfits[quality][wear]
+          }`
+        );
+        let skinIndex = findIndexOfPrice(cheapestPrices[quality][wear], collectionSkins, quality, wear);
+        console.log("profitable skin to use in tradeup\n" + collectionSkins[quality][skinIndex]);
       }
     }
+  }
 }
 
 function findIndexOfPrice(price, collectionSkins, quality, wear) {
   for (let i = 0; i < collectionSkins[quality].length; i++) {
-    let skinPrice = collectionSkins[quality][i]['Prices'][wear];
+    let skinPrice = collectionSkins[quality][i]["Prices"][wear];
     if (skinPrice == price) {
       return i;
     }
@@ -213,9 +222,9 @@ function findIndexOfPrice(price, collectionSkins, quality, wear) {
 function calculateAverageProfit(cheapestPrices, averagePrices) {
   let averageProfits = [];
   for (let i = 1; i < averagePrices.length; i++) {
-    let qualityProfits = []
+    let qualityProfits = [];
     for (const wear in averagePrices[i]) {
-      let profit = averagePrices[i][wear] - (10 * cheapestPrices[i-1][wear]);
+      let profit = averagePrices[i][wear] - 10 * cheapestPrices[i - 1][wear];
       qualityProfits.push(profit);
     }
     averageProfits.push(qualityProfits);
@@ -235,9 +244,9 @@ function calculateAveragePrices(collectionSkins) {
       let count = 0;
       for (const skin in collectionSkins[quality]) {
         count++;
-        sum += collectionSkins[quality][skin]['Prices'][wear];
+        sum += collectionSkins[quality][skin]["Prices"][wear];
       }
-      qualityAverages.push(sum/count);
+      qualityAverages.push(sum / count);
     }
     averagePrices.push(qualityAverages);
   }
@@ -247,53 +256,53 @@ function calculateAveragePrices(collectionSkins) {
 // retrieves the prices of the cheapest skin in arrays, expects it in the format retrieveCollectionSkins outputs
 // returns prices in the format of [[fn, mw, ft, ww, bs], [fn, ...], ...] or [Mil-Spec, Restricted, ...]
 function findCheapestPrices(collectionSkins) {
-    let cheapestPrices = [];
-    for (const quality in collectionSkins) {
-        let wearPrices = [];
-        // for each wear in a quality, get the cheapest price
-        for (const wear in wears) {
-            let cheapestPrice;
-            for (const skin in collectionSkins[quality]) {
-                if (cheapestPrice.length < 1) {
-                  try {
-                    cheapestPrice = collectionSkins[quality][skin]['Prices'][wear];
-                    continue;
-                  } catch (error) {
-                    continue;
-                  }
-                } else {
-                  let skinPrice;
-                  try {
-                    skinPrice = collectionSkins[quality][skin]['Prices'][wear];
-                    if (skinPrice < cheapestPrice) {
-                        cheapestPrice = skinPrice;
-                    }
-                  } catch (error) {
-                    continue;
-                  }
-                }
+  let cheapestPrices = [];
+  for (const quality in collectionSkins) {
+    let wearPrices = [];
+    // for each wear in a quality, get the cheapest price
+    for (const wear in wears) {
+      let cheapestPrice;
+      for (const skin in collectionSkins[quality]) {
+        if (cheapestPrice.length < 1) {
+          try {
+            cheapestPrice = collectionSkins[quality][skin]["Prices"][wear];
+            continue;
+          } catch (error) {
+            continue;
+          }
+        } else {
+          let skinPrice;
+          try {
+            skinPrice = collectionSkins[quality][skin]["Prices"][wear];
+            if (skinPrice < cheapestPrice) {
+              cheapestPrice = skinPrice;
             }
-            // for this wear, add it to the wearPrices
-            wearPrices.push(cheapestPrice);
+          } catch (error) {
+            continue;
+          }
         }
-        // for this quality, add all of the wearPrices
-        cheapestPrices.push(wearPrices);
+      }
+      // for this wear, add it to the wearPrices
+      wearPrices.push(cheapestPrice);
     }
-    return cheapestPrices;
+    // for this quality, add all of the wearPrices
+    cheapestPrices.push(wearPrices);
+  }
+  return cheapestPrices;
 }
 
 // retrieves all skins from the collection from the .json and returns an array with skin objects at the ends
 // returns collectionSkins of length = num of qualities in collection, that contains arrays for each quality that ontains skin objects for each skin in that quality
 function retrieveCollectionSkins(collection) {
-    let collectionSkins = [];
-    for (const quality in skins[collection]) {
-        let qualitySkins = [];
-        for (const skin in skins[collection][quality]) {
-            qualitySkins.push(skins[collection][quality][skin]);
-        }
-        collectionSkins.push(qualitySkins);
+  let collectionSkins = [];
+  for (const quality in skins[collection]) {
+    let qualitySkins = [];
+    for (const skin in skins[collection][quality]) {
+      qualitySkins.push(skins[collection][quality][skin]);
     }
-    return collectionSkins;
+    collectionSkins.push(qualitySkins);
+  }
+  return collectionSkins;
 }
 
 // given 10 "inputSkins" calculate the probability and wear of each skin from the trade-up
@@ -396,7 +405,7 @@ function calculateWearTarget(outputSkin, targetWear) {
   // use the equation: (targetWear - minWear) / (maxWear - minWear) = avgWearNeeded
   // double check with an online tradeup calculator before using
   let avgWearNeeded = (targetWear - outputSkin.min_wear) / (outputSkin.max_wear - outputSkin.min_wear);
-  console.log(avgWearNeeded);
+  console.log("avgWearNeeded: " + avgWearNeeded);
   return avgWearNeeded;
 }
 
@@ -404,8 +413,7 @@ function calculateWearTarget(outputSkin, targetWear) {
 // url format: `https://steamcommunity.com/market/listings/730/${weapon} | ${skin} (${wear})`
 // url example: https://steamcommunity.com/market/listings/730/Zeus x27 | Olympus (Factory New)
 async function retrievePrice(url, maxAttempts = 1) {
-  let buyPrices,
-    buyQuantities = getRawPrice(url, maxAttempts);
+  let [buyPrices, buyQuantities] = await getRawPrice(url, maxAttempts);
   if (buyPrices == -1 || buyQuantities == -1) {
     return -1;
   }
@@ -420,7 +428,11 @@ async function retrievePrice(url, maxAttempts = 1) {
   }
 
   let medianPrice = ordersIllustrated[Math.floor(ordersIllustrated.length / 2)];
-  console.log(medianPrice);
+  if (typeof medianPrice != "string" || medianPrice.length < 2) {
+    return -1;
+  }
+  medianPrice = parseFloat(medianPrice.substring(1));
+  console.log(url + " | " + medianPrice);
 
   return medianPrice;
 }
@@ -429,7 +441,9 @@ async function getRawPrice(url, maxAttempts) {
   let browser = null;
   // for mac installation doesn't locate automatically, use other if not on mac
   if (os.type() == "Darwin") {
-    browser = await puppeteer.launch({executablePath: '/Users/brycewood/.cache/puppeteer/chrome/mac_arm-122.0.6261.69/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing'});
+    browser = await puppeteer.launch({
+      executablePath: "/Users/brycewood/.cache/puppeteer/chrome/mac_arm-122.0.6261.69/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+    });
   } else {
     browser = await puppeteer.launch();
   }
@@ -451,8 +465,8 @@ async function getRawPrice(url, maxAttempts) {
     attemptCount++;
   }
   if (attemptCount >= 3 || buyPrices.length < 1) {
-    console.log("No buy price found, giving up");
-    return -1;
+    console.log("No buy price found, giving up | " + url);
+    return [-1, -1];
   }
 
   const buyQuantities = await page.evaluate(() => {
@@ -463,11 +477,14 @@ async function getRawPrice(url, maxAttempts) {
   return [buyPrices, buyQuantities];
 }
 
-/*
-const skinsString = JSON.stringify(skins);
+updateAllPrices().then(() => {
+  const skinsString = JSON.stringify(skins);
 
-fs.writeFileSync("price database.json", skinsString, "utf-8", (err) => {
-  if (err) throw err;
-  console.log("Data added to file");
+  fs.writeFileSync("price database.json", skinsString, "utf-8", (err) => {
+    if (err) throw err;
+    console.log("Data added to file");
+  });
+
+  console.log("successfully wrote to file");
+  process.exit();
 });
-*/
