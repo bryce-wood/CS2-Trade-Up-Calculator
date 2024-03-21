@@ -116,7 +116,7 @@ let scarEnforcer = {
 // console.log(outSkins);
 // console.log(outWears);
 
-//singleCollectionTradeups('Kilowatt Case');
+singleCollectionTradeups("Kilowatt Case");
 
 // minTimeSinceLastModified default value is 1 day in milliseconds
 async function updateAllPrices(minTimeSinceLastModified = 86_400_000) {
@@ -196,13 +196,22 @@ function singleCollectionTradeups(collection) {
     for (const wear in averageProfits) {
       if (averageProfits[quality][wear] > 0) {
         // TODO: output this to a file that can be retrieved after the program expires
+        let averagePricesQualityIndex = parseInt(quality) + 1;
         console.log(
-          `Profitable Tradeup: tradeup item quality ${quality + 1} and wear ${wear} 10 * ${cheapestPrices[quality][wear]} < ${averagePrices[quality + 1][wear]}, which profits ${
+          "Profitable Tradeup: tradeup item quality " +
+            quality +
+            " and wear " +
+            wear +
+            " 10 * " +
+            cheapestPrices[quality][wear] +
+            " < " +
+            averagePrices[averagePricesQualityIndex][wear] +
+            ", which profits " +
             averageProfits[quality][wear]
-          }`
         );
         let skinIndex = findIndexOfPrice(cheapestPrices[quality][wear], collectionSkins, quality, wear);
-        console.log("profitable skin to use in tradeup\n" + collectionSkins[quality][skinIndex]);
+        let profitableSkin = collectionSkins[quality][skinIndex];
+        console.log(profitableSkin.weapon + " | " + profitableSkin.skin + " | " + wears[wear] + " | " + cheapestPrices[quality][wear] + "\n");
       }
     }
   }
@@ -210,7 +219,7 @@ function singleCollectionTradeups(collection) {
 
 function findIndexOfPrice(price, collectionSkins, quality, wear) {
   for (let i = 0; i < collectionSkins[quality].length; i++) {
-    let skinPrice = collectionSkins[quality][i]["Prices"][wear];
+    let skinPrice = collectionSkins[quality][i]["Prices"][wears[wear]];
     if (skinPrice == price) {
       return i;
     }
@@ -229,6 +238,7 @@ function calculateAverageProfit(cheapestPrices, averagePrices) {
     }
     averageProfits.push(qualityProfits);
   }
+  return averageProfits;
 }
 
 // when given an array of skins of qualities, finds the average price of each wear tier for a quality
@@ -238,7 +248,7 @@ function calculateAveragePrices(collectionSkins) {
   for (const quality in collectionSkins) {
     // will have all 5 wears
     let qualityAverages = [];
-    for (const wear in wears) {
+    for (const wear of wears) {
       // will have just this wear
       let sum = 0;
       let count = 0;
@@ -260,12 +270,14 @@ function findCheapestPrices(collectionSkins) {
   for (const quality in collectionSkins) {
     let wearPrices = [];
     // for each wear in a quality, get the cheapest price
-    for (const wear in wears) {
+    for (const wear of wears) {
       let cheapestPrice;
       for (const skin in collectionSkins[quality]) {
-        if (cheapestPrice.length < 1) {
+        if (!cheapestPrice || cheapestPrice.length < 1) {
           try {
-            cheapestPrice = collectionSkins[quality][skin]["Prices"][wear];
+            if (collectionSkins[quality][skin]["Prices"][wear]) {
+              cheapestPrice = collectionSkins[quality][skin]["Prices"][wear];
+            }
             continue;
           } catch (error) {
             continue;
@@ -477,6 +489,7 @@ async function getRawPrice(url, maxAttempts) {
   return [buyPrices, buyQuantities];
 }
 
+/*
 updateAllPrices().then(() => {
   const skinsString = JSON.stringify(skins);
 
@@ -488,3 +501,4 @@ updateAllPrices().then(() => {
   console.log("successfully wrote to file");
   process.exit();
 });
+*/
