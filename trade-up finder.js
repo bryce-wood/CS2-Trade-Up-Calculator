@@ -84,7 +84,7 @@ const allCollections = [
   "Kilowatt Case",
 ];
 var os = require("os");
-var requestCount = 0;
+var pricesRetrieved = 0;
 // console.log(skins['Kilowatt Case'].Classified[1]);
 
 // let weapon = skins['Kilowatt Case'].Classified[1].weapon;
@@ -116,18 +116,17 @@ let scarEnforcer = {
 // console.log(outSkins);
 // console.log(outWears);
 
-singleCollectionTradeups("Kilowatt Case");
+//singleCollectionTradeups("Kilowatt Case");
 
-// minTimeSinceLastModified default value is 1 day in milliseconds
-async function updateAllPrices(minTimeSinceLastModified = 86_400_000) {
+// minTimeSinceLastModified default value is 1 week in milliseconds
+async function updateAllPrices(minTimeSinceLastModified = 604_800_000) {
   for (const collection of allCollections) {
     await updateCollectionPrices(collection, minTimeSinceLastModified);
   }
 }
 
-// minTimeSinceLastModified default value is 1 day in milliseconds
-async function updateCollectionPrices(collection, minTimeSinceLastModified = 86_400_000) {
-  let wears = ["Factory New", "Minimal Wear", "Field-Tested", "Well-Worn", "Battle-Scarred"];
+// minTimeSinceLastModified default value is 1 week in milliseconds
+async function updateCollectionPrices(collection, minTimeSinceLastModified = 604_800_000) {
   for (const quality in skins[collection]) {
     for (const skin in skins[collection][quality]) {
       for (let i = 0; i < wears.length; i++) {
@@ -142,8 +141,8 @@ async function updateCollectionPrices(collection, minTimeSinceLastModified = 86_
         let wear = wears[i];
         let link = `https://steamcommunity.com/market/listings/730/${weapon} | ${gunSkin} (${wear})`;
         let price = await retrievePrice(link);
-        // upon retrieval wait 10 seconds so steam doesn't hate us
-        await setTimeout(10000);
+        // upon retrieval wait 3 seconds so steam doesn't hate us
+        await setTimeout(3000);
         // if no price is found, skip to the next skin
         if (price == -1) {
           continue;
@@ -163,6 +162,13 @@ async function updateCollectionPrices(collection, minTimeSinceLastModified = 86_
       }
     }
   }
+  const skinsString = JSON.stringify(skins);
+
+  fs.writeFileSync("price database.json", skinsString, "utf-8", (err) => {
+    if (err) throw err;
+    console.log(collection + " added to file");
+  });
+  console.log(collection + " added to file");
 }
 
 function allTradeups() {
@@ -424,7 +430,7 @@ function calculateWearTarget(outputSkin, targetWear) {
 // retrieves the median price of a skin from the steam market based on the buy orders
 // url format: `https://steamcommunity.com/market/listings/730/${weapon} | ${skin} (${wear})`
 // url example: https://steamcommunity.com/market/listings/730/Zeus x27 | Olympus (Factory New)
-async function retrievePrice(url, maxAttempts = 1) {
+async function retrievePrice(url, maxAttempts = 2) {
   let [buyPrices, buyQuantities] = await getRawPrice(url, maxAttempts);
   if (buyPrices == -1 || buyQuantities == -1) {
     return -1;
@@ -445,6 +451,7 @@ async function retrievePrice(url, maxAttempts = 1) {
   }
   medianPrice = parseFloat(medianPrice.substring(1));
   console.log(url + " | " + medianPrice);
+  pricesRetrieved++;
 
   return medianPrice;
 }
@@ -455,9 +462,12 @@ async function getRawPrice(url, maxAttempts) {
   if (os.type() == "Darwin") {
     browser = await puppeteer.launch({
       executablePath: "/Users/brycewood/.cache/puppeteer/chrome/mac_arm-122.0.6261.69/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+      timeout: 300_000,
     });
   } else {
-    browser = await puppeteer.launch();
+    browser = await puppeteer.launch({
+      timeout: 300_000,
+    });
   }
   const page = await browser.newPage();
 
@@ -468,9 +478,8 @@ async function getRawPrice(url, maxAttempts) {
   });
   let attemptCount = 1;
   while (buyPrices.length < 1 && attemptCount < maxAttempts) {
-    console.log("No buy prices found, retrying in 5 seconds");
+    console.log("No buy price found, retrying in 5 seconds");
     await setTimeout(5000);
-    console.log("Retrieving price... " + attemptCount);
     buyPrices = await page.evaluate(() => {
       return Array.from(document.querySelectorAll("#market_commodity_buyreqeusts_table > table > tbody > tr > td:nth-child(1)")).map((x) => x.textContent);
     });
@@ -478,27 +487,58 @@ async function getRawPrice(url, maxAttempts) {
   }
   if (attemptCount >= 3 || buyPrices.length < 1) {
     console.log("No buy price found, giving up | " + url);
+    browser.removeAllListeners();
+    await browser.close();
     return [-1, -1];
   }
 
   const buyQuantities = await page.evaluate(() => {
     return Array.from(document.querySelectorAll("#market_commodity_buyreqeusts_table > table > tbody > tr > td:nth-child(2)")).map((x) => x.textContent);
   });
-
+  browser.removeAllListeners();
   await browser.close();
   return [buyPrices, buyQuantities];
 }
 
+function instantiateTheUninstatiated() {
+  for (const collection in skins) {
+    for (const quality in skins[collection]) {
+      for (const skin in skins[collection][quality]) {
+        for (let i = 0; i < wears.length; i++) {
+          try {
+            let price = skins[collection][quality][skin]["Prices"][wears[i]];
+            if (price == undefined || price == -1) {
+              skins[collection][quality][skin]["Prices"][wears[i]] = -1;
+              skins[collection][quality][skin]["Last Modified"][wears[i]] = Date.now();
+              console.log("here");
+            }
+          } catch (error) {
+            skins[collection][quality][skin]["Prices"] = {};
+            skins[collection][quality][skin]["Prices"][wears[i]] = -1;
+            console.log("here");
+            try {
+            } catch (error) {
+              skins[collection][quality][skin]["Last Modified"] = {};
+              skins[collection][quality][skin]["Last Modified"][wears[i]] = Date.now();
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+instantiateTheUninstatiated();
+
+const skinsString = JSON.stringify(skins);
+
+fs.writeFileSync("price database.json", skinsString, "utf-8", (err) => {
+  if (err) throw err;
+});
+
 /*
 updateAllPrices().then(() => {
-  const skinsString = JSON.stringify(skins);
-
-  fs.writeFileSync("price database.json", skinsString, "utf-8", (err) => {
-    if (err) throw err;
-    console.log("Data added to file");
-  });
-
-  console.log("successfully wrote to file");
+  console.log("Number of Prices Retrieved in this Session: " + pricesRetrieved);
   process.exit();
 });
 */
