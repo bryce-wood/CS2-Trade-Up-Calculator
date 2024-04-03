@@ -83,6 +83,8 @@ const allCollections = [
   "Revolution Case",
   "Kilowatt Case",
 ];
+// default steam fee for CS2 is 15% or 0.15
+const TOTAL_FEE = 0.15;
 var os = require("os");
 var pricesRetrieved = 0;
 // console.log(skins['Kilowatt Case'].Classified[1]);
@@ -187,6 +189,25 @@ function singleCollectionTradeupsSmart(collection) {
   // if min-wear != 0 || max-wear != 1, find potential wear jumps and avg input wear required to do the jump
   // also if max-wear < 1 then need to notate the increased avg in wear needed to get to wears
   // otherwise operates the same and singleCollectionTradeups
+  let collectionSkins = retrieveCollectionSkins(collection);
+  let cheapestPrices = findCheapestPrices(collectionSkins);
+  let imperfectWearSkins = findImperfectWearSkins(collectionSkins);
+}
+
+// returns the list of skins in the collection where the float range is not 0-1
+function findImperfectWearSkins(collectionSkins) {
+  let imperfectWearSkins = [];
+  for (const quality in collectionSkins) {
+    // will have all 5 wears
+    let qualityImperfect = [];
+    for (const skin in collectionSkins[quality]) {
+      if(collectionSkins[quality][skin].max_wear != 1 || collectionSkins[quality][skin].min_wear != 0) {
+        qualityImperfect.push(collectionSkins[quality][skin]);
+      };
+    }
+    imperfectWearSkins.push(qualityImperfect);
+  }
+  return imperfectWearSkins;
 }
 
 // *** currently ignorant of min-wear and max-wear, assumes bs makes a bs, mw makes a mw, etc, so it may be incorrect ***
@@ -203,6 +224,9 @@ function singleCollectionTradeups(collection) {
       if (averageProfits[quality][wear] > 0) {
         // TODO: output this to a file that can be retrieved after the program expires
         let averagePricesQualityIndex = parseInt(quality) + 1;
+        if (cheapestPrices[quality][wear] * 10 < cheapestPrices[averagePricesQualityIndex][wear]) {
+          console.log("**********PERFECT TRADEUP!**********");
+        }
         console.log(
           "Profitable Tradeup: tradeup item quality " +
             quality +
