@@ -184,24 +184,8 @@ function singleCollectionTradeupsSmart(collection) {
   // otherwise operates the same and singleCollectionTradeups
   let collectionSkins = retrieveCollectionSkins(collection);
   let cheapestPrices = findCheapestPrices(collectionSkins);
-  let imperfectWearSkins = findImperfectWearSkins(collectionSkins);
 }
 
-// returns the list of skins in the collection where the float range is not 0-1
-function findImperfectWearSkins(collectionSkins) {
-  let imperfectWearSkins = [];
-  for (const quality in collectionSkins) {
-    // will have all 5 wears
-    let qualityImperfect = [];
-    for (const skin in collectionSkins[quality]) {
-      if(collectionSkins[quality][skin].max_wear != 1 || collectionSkins[quality][skin].min_wear != 0) {
-        qualityImperfect.push(collectionSkins[quality][skin]);
-      };
-    }
-    imperfectWearSkins.push(qualityImperfect);
-  }
-  return imperfectWearSkins;
-}
 // *** currently ignorant of min-wear and max-wear, assumes bs makes a bs, mw makes a mw, etc, so it may be incorrect ***
 // outputs profitable trade-ups within a single collection
 function singleCollectionTradeups(collection) {
