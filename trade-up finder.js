@@ -185,25 +185,6 @@ function singleCollectionTradeupsSmart(collection) {
   let collectionSkins = retrieveCollectionSkins(collection);
   let cheapestPrices = findCheapestPrices(collectionSkins);
   let imperfectWearSkins = findImperfectWearSkins(collectionSkins);
-<<<<<<< HEAD
-=======
-}
-
-// returns the list of skins in the collection where the float range is not 0-1
-function findImperfectWearSkins(collectionSkins) {
-  let imperfectWearSkins = [];
-  for (const quality in collectionSkins) {
-    // will have all 5 wears
-    let qualityImperfect = [];
-    for (const skin in collectionSkins[quality]) {
-      if(collectionSkins[quality][skin].max_wear != 1 || collectionSkins[quality][skin].min_wear != 0) {
-        qualityImperfect.push(collectionSkins[quality][skin]);
-      };
-    }
-    imperfectWearSkins.push(qualityImperfect);
-  }
-  return imperfectWearSkins;
->>>>>>> 7e9964e86202f527a4a7415d6ddacdab687841d2
 }
 
 // returns the list of skins in the collection where the float range is not 0-1
@@ -551,13 +532,14 @@ function instantiateTheUninstatiated() {
   }
 }
 
-instantiateTheUninstatiated();
+// only needs to be run when the prices and times are not instantiated, which only happens
+// if new collection is not added with prices
+//instantiateTheUninstatiated();
 
-const skinsString = JSON.stringify(skins);
-
-fs.writeFileSync("price database.json", skinsString, "utf-8", (err) => {
-  if (err) throw err;
-});
+// const skinsString = JSON.stringify(skins);
+// fs.writeFileSync("price database.json", skinsString, "utf-8", (err) => {
+//   if (err) throw err;
+// });
 
 /*
 updateAllPrices().then(() => {
