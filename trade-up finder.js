@@ -114,6 +114,7 @@ let scarEnforcer = {
 // console.log(outWears);
 
 //singleCollectionTradeups("Kilowatt Case");
+singleCollectionTradeupsSmart("Kilowatt Case");
 
 // minTimeSinceLastModified default value is 1 week in milliseconds
 async function updateAllPrices(minTimeSinceLastModified = 604_800_000) {
@@ -184,6 +185,27 @@ function singleCollectionTradeupsSmart(collection) {
   // otherwise operates the same and singleCollectionTradeups
   let collectionSkins = retrieveCollectionSkins(collection);
   let cheapestPrices = findCheapestPrices(collectionSkins);
+
+  // go through each collection, skipping the first one
+  for (let c = 1; c < collectionSkins.length; c++) {
+    // go through each skin in the collection
+    for (const s in collectionSkins[c]) {
+      let wearUpgradePotential = false;
+      let wearDowngradePotential = false;
+      // if the skin is not 0-1 wear range, see wear jumps and report required avg_wear
+      if (collectionSkins[c][s]['min-wear'] != 0) {
+        console.log("up potential");
+        wearUpgradePotential = true;
+      }
+      if (collectionSkins[c][s]['max-wear'] != 1) {
+        console.log("down potential");
+        wearDowngradePotential = true;
+      }
+      if (wearUpgradePotential || wearDowngradePotential) {
+        console.log(collectionSkins[c][s]);
+      }
+    }
+  }
 }
 
 // *** currently ignorant of min-wear and max-wear, assumes bs makes a bs, mw makes a mw, etc, so it may be incorrect ***
