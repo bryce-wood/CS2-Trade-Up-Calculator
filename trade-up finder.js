@@ -253,7 +253,7 @@ function calculateAverageProfit(cheapestPrices, averagePrices) {
   for (let i = 1; i < averagePrices.length; i++) {
     let qualityProfits = [];
     for (const wear in averagePrices[i]) {
-      let profit = averagePrices[i][wear] - 10 * cheapestPrices[i - 1][wear];
+      let profit = averagePrices[i][wear] * TOTAL_FEE - 10 * cheapestPrices[i - 1][wear];
       qualityProfits.push(profit);
     }
     averageProfits.push(qualityProfits);
