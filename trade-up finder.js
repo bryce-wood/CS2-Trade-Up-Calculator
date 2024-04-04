@@ -3,7 +3,8 @@ const { setTimeout } = require("timers/promises");
 const fs = require("fs");
 const skinsData = fs.readFileSync("./price database.json");
 const skins = JSON.parse(skinsData);
-const wears = ["Battle-Scarred", "Well-Worn", "Field-Tested", "Minimal Wear", "Factory New"];
+const wears = ["Factory New", "Minimal Wear", "Field-Tested", "Well-Worn", "Battle-Scarred"];
+const wearBounds = [0,0.07,0.15,0.37,0.44]; // top bound of each wear
 const allCollections = [
   "Anubis Collection",
   "Ancient Collection",
@@ -201,8 +202,12 @@ function singleCollectionTradeupsSmart(collection) {
         console.log("down potential");
         wearDowngradePotential = true;
       }
-      if (wearUpgradePotential || wearDowngradePotential) {
-        console.log(collectionSkins[c][s]);
+      for (const wear of wears) {
+        if (wearUpgradePotential || wearDowngradePotential) {
+          console.log(collectionSkins[c][s]);
+        } else {
+  
+        }
       }
     }
   }
