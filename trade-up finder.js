@@ -187,26 +187,48 @@ function singleCollectionTradeupsSmart(collection) {
   let collectionSkins = retrieveCollectionSkins(collection);
   let cheapestPrices = findCheapestPrices(collectionSkins);
 
-  // go through each collection, skipping the first one
-  for (let c = 1; c < collectionSkins.length; c++) {
-    // go through each skin in the collection
-    for (const s in collectionSkins[c]) {
+  // go through each quality, skipping the first one
+  for (let q = 1; q < collectionSkins.length; q++) {
+    // go through each skin in the quality
+    for (const s in collectionSkins[q]) {
       let wearUpgradePotential = false;
       let wearDowngradePotential = false;
       // if the skin is not 0-1 wear range, see wear jumps and report required avg_wear
-      if (collectionSkins[c][s]['min-wear'] != 0) {
-        console.log("up potential");
-        wearUpgradePotential = true;
-      }
-      if (collectionSkins[c][s]['max-wear'] != 1) {
-        console.log("down potential");
+      if (collectionSkins[q][s]['min-wear'] != 0) {
+        //console.log("down potential");
         wearDowngradePotential = true;
       }
-      for (const wear of wears) {
-        if (wearUpgradePotential || wearDowngradePotential) {
-          console.log(collectionSkins[c][s]);
-        } else {
-  
+      if (collectionSkins[q][s]['max-wear'] != 1) {
+        //console.log("up potential");
+        wearUpgradePotential = true;
+      }
+
+      // uses .concat() to copy wearBounds as to not change the defaults
+      let skinWearBounds = wearBounds.concat();
+      // if the skin is not 0-1 wear range, change skinWearBounds to correct values
+      if (wearUpgradePotential || wearDowngradePotential) {
+        for (const wear in skinWearBounds) {
+          let newBound = (skinWearBounds[wear] - collectionSkins[q][s]['min-wear']) / (collectionSkins[q][s]['max-wear'] - collectionSkins[q][s]['min-wear']);
+          // to fix floating point innaccuracy
+          skinWearBounds[wear] = Math.round(newBound * 10 ** 15) / 10 ** 15;
+        }
+      }
+      for (const wear in wears) {
+        // WARNING, NOT GARUNTEED TO BE SAME WEAR, FIX
+        // potential way to fix: base wear of input on wear needed for output
+        // e.g. if wear needed is 0.38, search in wearBounds for the correct wear
+        if (10*cheapestPrices[q-1][wear] < cheapestPrices[q][wear]) {
+          console.log("********** PERFECT TRADEUP **********");
+          console.log(cheapestPrices[q-1][wear] + " to " + cheapestPrices[q][wear]);
+          console.log(wears[wear] + " " + collectionSkins[q-1][s]['skin'] + " to " + wears[wear] + " " + collectionSkins[q][s]['skin']);
+          console.log("needs to be between " + skinWearBounds[wear] + " and " + skinWearBounds[wear+1]);
+          console.log("default is " + wearBounds);
+        }
+        if (wearUpgradePotential && wear > 0 && 10*cheapestPrices[q-1][wears-1] < cheapestPrices[q][wear]) {
+          console.log("^^^^^^^^^^ PERFECT TRADEUP ^^^^^^^^^^");
+        }
+        if (wearDowngradePotential && wear < wears.length-1 && 10*cheapestPrices[q-1][wears+1] < cheapestPrices[q][wear]) {
+          console.log("vvvvvvvvvv PERFECT TRADEUP vvvvvvvvvv");
         }
       }
     }
