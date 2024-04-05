@@ -4,7 +4,7 @@ const fs = require("fs");
 const skinsData = fs.readFileSync("./price database.json");
 const skins = JSON.parse(skinsData);
 const wears = ["Factory New", "Minimal Wear", "Field-Tested", "Well-Worn", "Battle-Scarred"];
-const wearBounds = [0,0.07,0.15,0.37,0.44]; // top bound of each wear
+const wearBounds = [0,0.07,0.15,0.37,0.44]; // low bound of each wear
 const allCollections = [
   "Anubis Collection",
   "Ancient Collection",
@@ -208,7 +208,7 @@ function singleCollectionTradeupsSmart(collection) {
       // if the skin is not 0-1 wear range, change skinWearBounds to correct values
       if (wearUpgradePotential || wearDowngradePotential) {
         for (const wear in skinWearBounds) {
-          let newBound = (skinWearBounds[wear] - collectionSkins[q][s]['min-wear']) / (collectionSkins[q][s]['max-wear'] - collectionSkins[q][s]['min-wear']);
+          let newBound = calculateWearTarget(collectionSkins[q][s]['min-wear'], collectionSkins[q][s]['max-wear'], skinWearBounds[wear]);
           // to fix floating point innaccuracy
           skinWearBounds[wear] = Math.round(newBound * 10 ** 15) / 10 ** 15;
         }
@@ -217,18 +217,19 @@ function singleCollectionTradeupsSmart(collection) {
         // WARNING, NOT GARUNTEED TO BE SAME WEAR, FIX
         // potential way to fix: base wear of input on wear needed for output
         // e.g. if wear needed is 0.38, search in wearBounds for the correct wear
-        if (10*cheapestPrices[q-1][wear] < cheapestPrices[q][wear]) {
-          console.log("********** PERFECT TRADEUP **********");
-          console.log(cheapestPrices[q-1][wear] + " to " + cheapestPrices[q][wear]);
-          console.log(wears[wear] + " " + collectionSkins[q-1][s]['skin'] + " to " + wears[wear] + " " + collectionSkins[q][s]['skin']);
-          console.log("needs to be between " + skinWearBounds[wear] + " and " + skinWearBounds[wear+1]);
-          console.log("default is " + wearBounds);
+
+        // contains the index of wears that can be used to get the target wear of the output skin
+        // the natural wears that are contained within skinWearBounds
+        let useableWears = [];
+        for(let i = 0; i < wears-1; i++) {
+          // if skinLowBound < natUpBound or skinUpBound > natLowBound
+          // e.g. skinLow 0.06 < natUp 0.07 for FN, skin can be as low as 0.06, which is less than the greatest FN, so can be FN
+          if (skinWearBounds[0] <= wearBounds[i+1] || skinWearBounds[1] >= wearBounds[i]) {
+            useableWears.push(i);
+          }
         }
-        if (wearUpgradePotential && wear > 0 && 10*cheapestPrices[q-1][wears-1] < cheapestPrices[q][wear]) {
-          console.log("^^^^^^^^^^ PERFECT TRADEUP ^^^^^^^^^^");
-        }
-        if (wearDowngradePotential && wear < wears.length-1 && 10*cheapestPrices[q-1][wears+1] < cheapestPrices[q][wear]) {
-          console.log("vvvvvvvvvv PERFECT TRADEUP vvvvvvvvvv");
+        for (const useableWear of useableWears) {
+          // mirror signleCollectionTradeups profit detection, but report required wear
         }
       }
     }
@@ -461,11 +462,11 @@ function calculateOutcome(inputSkins) {
   }
   return [uniqueSkins, outWears];
 }
-function calculateWearTarget(outputSkin, targetWear) {
+function calculateWearTarget(minWear, maxWear, targetWear) {
   // use the equation: (targetWear - minWear) / (maxWear - minWear) = avgWearNeeded
   // double check with an online tradeup calculator before using
-  let avgWearNeeded = (targetWear - outputSkin.min_wear) / (outputSkin.max_wear - outputSkin.min_wear);
-  console.log("avgWearNeeded: " + avgWearNeeded);
+  let avgWearNeeded = (targetWear - minWear) / (maxWear - minWear);
+  //console.log("avgWearNeeded: " + avgWearNeeded);
   return avgWearNeeded;
 }
 // retrieves the median price of a skin from the steam market based on the buy orders
