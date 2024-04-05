@@ -230,6 +230,15 @@ function singleCollectionTradeupsSmart(collection) {
         }
         for (const useableWear of useableWears) {
           // mirror signleCollectionTradeups profit detection, but report required wear
+          if (cheapestPrices[q-1][useableWear]*10 < cheapestPrices[q][wear]) {
+            console.log("********** PERFECT TRADEUP! **********");
+          }
+          let inIndex = findIndexOfPrice(cheapestPrices[q-1][useableWear], collectionSkins, q-1, useableWear);
+          let inSkin = collectionSkins[q-1][inIndex];
+          let outSkin = collectionSkins[q][s];
+          console.log(`${wears[useableWear]} ${inSkin['weapon']} ${inSkin['skin']} at price ${cheapestPrices[q-1][useableWear]} to ${wears[wear]} ${outSkin['weapon']} ${outSkin['skin']} at price ${outSkin['Prices'][wears[wear]]}`);
+          // calculate this for wear specific that fits in both wearBounds[usableWear] and skinWearBounds[wear]
+          console.log(`Average Input Wear has to be between `);
         }
       }
     }
