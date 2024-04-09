@@ -186,6 +186,7 @@ function singleCollectionTradeupsSmart(collection) {
   // otherwise operates the same and singleCollectionTradeups
   let collectionSkins = retrieveCollectionSkins(collection);
   let cheapestPrices = findCheapestPrices(collectionSkins);
+  let averagePrices = calculateAveragePrices(collectionSkins);
 
   // go through each quality, skipping the first one
   for (let q = 1; q < collectionSkins.length; q++) {
@@ -208,37 +209,51 @@ function singleCollectionTradeupsSmart(collection) {
       // if the skin is not 0-1 wear range, change skinWearBounds to correct values
       if (wearUpgradePotential || wearDowngradePotential) {
         for (const wear in skinWearBounds) {
-          let newBound = calculateWearTarget(collectionSkins[q][s]['min-wear'], collectionSkins[q][s]['max-wear'], skinWearBounds[wear]);
+          let skinMinWear = collectionSkins[q][s]['min-wear'];
+          let skinMaxWear = collectionSkins[q][s]['max-wear'];
+          let newBound = calculateWearTarget(skinMinWear, skinMaxWear, skinWearBounds[wear]);
+          //console.log(skinMinWear + " and " + skinMaxWear + " | " + skinWearBounds[wear] + " -> " + newBound);
           // to fix floating point innaccuracy
           skinWearBounds[wear] = Math.round(newBound * 10 ** 15) / 10 ** 15;
         }
+        //console.log(skinWearBounds);
       }
       for (const wear in wears) {
-        // WARNING, NOT GARUNTEED TO BE SAME WEAR, FIX
-        // potential way to fix: base wear of input on wear needed for output
-        // e.g. if wear needed is 0.38, search in wearBounds for the correct wear
-
         // contains the index of wears that can be used to get the target wear of the output skin
         // the natural wears that are contained within skinWearBounds
         let useableWears = [];
-        for(let i = 0; i < wears-1; i++) {
+        for(let i = 0; i < wears.length-1; i++) {
           // if skinLowBound < natUpBound or skinUpBound > natLowBound
           // e.g. skinLow 0.06 < natUp 0.07 for FN, skin can be as low as 0.06, which is less than the greatest FN, so can be FN
-          if (skinWearBounds[0] <= wearBounds[i+1] || skinWearBounds[1] >= wearBounds[i]) {
+          if (skinWearBounds[i] <= wearBounds[i+1] || skinWearBounds[i+1] >= wearBounds[i]) {
             useableWears.push(i);
           }
         }
         for (const useableWear of useableWears) {
           // mirror signleCollectionTradeups profit detection, but report required wear
-          if (cheapestPrices[q-1][useableWear]*10 < cheapestPrices[q][wear]) {
+          if (10 * cheapestPrices[q-1][useableWear] < cheapestPrices[q][wear]) {
             console.log("********** PERFECT TRADEUP! **********");
           }
-          let inIndex = findIndexOfPrice(cheapestPrices[q-1][useableWear], collectionSkins, q-1, useableWear);
-          let inSkin = collectionSkins[q-1][inIndex];
-          let outSkin = collectionSkins[q][s];
-          console.log(`${wears[useableWear]} ${inSkin['weapon']} ${inSkin['skin']} at price ${cheapestPrices[q-1][useableWear]} to ${wears[wear]} ${outSkin['weapon']} ${outSkin['skin']} at price ${outSkin['Prices'][wears[wear]]}`);
-          // calculate this for wear specific that fits in both wearBounds[usableWear] and skinWearBounds[wear]
-          console.log(`Average Input Wear has to be between `);
+          if (10 * cheapestPrices[q-1][useableWear] < averagePrices[q][wear]) {
+            let inIndex = findIndexOfPrice(cheapestPrices[q-1][useableWear], collectionSkins, q-1, useableWear);
+            // only print if profitable on average
+            let inSkin = collectionSkins[q-1][inIndex];
+            let outSkin = collectionSkins[q][s];
+            console.log(`${wears[useableWear]} ${inSkin['weapon']} ${inSkin['skin']} at price ${cheapestPrices[q-1][useableWear]} to ${wears[wear]} ${outSkin['weapon']} ${outSkin['skin']} at price ${outSkin['Prices'][wears[wear]]}`);
+            // calculate this for wear specific that fits in both wearBounds[usableWear] and skinWearBounds[wear]
+            let lowBound = skinWearBounds[0];
+            let upBound = skinWearBounds[1];
+            if (lowBound < wearBounds[useableWear]) {
+              lowBound = wearBounds[useableWear];
+            }
+            if (upBound > wearBounds[useableWear+1]) {
+              upBound = wearBounds[useableWear+1];
+            }
+  
+            console.log(`Average Input Wear has to be between ${lowBound} and ${upBound}`);
+            let profit = (averagePrices[q][wear]* (1-TOTAL_FEE) - cheapestPrices[q-1][useableWear]*10);
+            console.log(`Profits ${profit} on average\n`)
+          }
         }
       }
     }
@@ -249,15 +264,12 @@ function singleCollectionTradeupsSmart(collection) {
 // outputs profitable trade-ups within a single collection
 function singleCollectionTradeups(collection) {
   let collectionSkins = retrieveCollectionSkins(collection);
-  // returns the actual prices instead of indexes of the cheapest prices for clarity and similarity to other arrays
   let cheapestPrices = findCheapestPrices(collectionSkins);
   let averagePrices = calculateAveragePrices(collectionSkins);
   let averageProfits = calculateAverageProfit(cheapestPrices, averagePrices);
-  // only list profitable (on averaged) outputs
   for (const quality in averageProfits) {
     for (const wear in averageProfits) {
       if (averageProfits[quality][wear] > 0) {
-        // TODO: output this to a file that can be retrieved after the program expires
         let averagePricesQualityIndex = parseInt(quality) + 1;
         if (cheapestPrices[quality][wear] * 10 < cheapestPrices[averagePricesQualityIndex][wear]) {
           console.log("**********PERFECT TRADEUP!**********");
@@ -276,7 +288,8 @@ function singleCollectionTradeups(collection) {
         );
         let skinIndex = findIndexOfPrice(cheapestPrices[quality][wear], collectionSkins, quality, wear);
         let profitableSkin = collectionSkins[quality][skinIndex];
-        console.log(profitableSkin.weapon + " | " + profitableSkin.skin + " | " + wears[wear] + " | " + cheapestPrices[quality][wear] + "\n");
+        console.log(profitableSkin.weapon + " | " + profitableSkin.skin + " | " 
+                    + wears[wear] + " | " + cheapestPrices[quality][wear] + "\n");
       }
     }
   }
