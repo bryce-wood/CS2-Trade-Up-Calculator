@@ -84,6 +84,15 @@ const allCollections = [
   "Revolution Case",
   "Kilowatt Case",
 ];
+const allQualities = [
+  "Other",
+  "Covert",
+  "Classified",
+  "Restricted",
+  "Mil-Spec",
+  "Industrial Grade",
+  "Consumer Grade"
+];
 // default steam fee for CS2 is 15% or 0.15
 const TOTAL_FEE = 0.15;
 var os = require("os");
@@ -115,7 +124,9 @@ let scarEnforcer = {
 // console.log(outWears);
 
 //singleCollectionTradeups("Kilowatt Case");
-singleCollectionTradeupsSmart("Kilowatt Case");
+//singleCollectionTradeupsSmart("Kilowatt Case");
+//calculateAllPerfectTradeups();
+calculateQualityTradeups(allQualities[2]);
 
 // minTimeSinceLastModified default value is 1 week in milliseconds
 async function updateAllPrices(minTimeSinceLastModified = 604_800_000) {
@@ -170,16 +181,78 @@ async function updateCollectionPrices(collection, minTimeSinceLastModified = 604
   console.log(collection + " added to file");
 }
 
-function allTradeups() {
+// calculate every profitable trade-up, seperates the "perfect" ones that can only profit
+function calculateAllTradeups() {
+  // can either look at input, or output, input is easier bc output skins vary on input
+  // There are a few ways to make it more profitable, either (1) adjust input wears to fit more profitable outputs,
+  // (2) include cheaper collections (will need to check that avg outcome is still profitable, as perfect will not be)
+  // (3) include expensive collections (if the avg up quality price > 10*in doesnt matter increased price)
+}
+
+// finds all profitable tradeups from the specified quality to the next up
+function calculateQualityTradeups(quality) {
+  // first ensure that the quality exists
+  let qualityIndex = allQualities.findIndex((q) => q == quality);
+  // if quality is higher than Classified (Covert or Other) it cannot be traded up
+  if (qualityIndex < 2) {
+    console.log("Quality specified (" + quality + ") cannot be traded up.");
+    return;
+  }
+  
+  // first get the cheapest skin of this quality from each collection
+  // if the collection does not have this quality, put it in as -1
+  let cheapestSkins = [];
+  for (const collection of allCollections) {
+    let collectionCheapest = [];
+    for (const wear of wears) {
+      let cheapest = -1;
+      for (const skin in skins[collection][quality]) {
+        let thisPrice = skins[collection][quality][skin]["Prices"][wear];
+        if (cheapest == -1) {
+          cheapest = thisPrice;
+        } else if (thisPrice < cheapest) {
+          cheapest = thisPrice;
+        }
+      }
+      collectionCheapest.push(cheapest);
+    }
+    cheapestSkins.push(collectionCheapest);
+  }
+}
+
+// operates like calculateAllTradeups, but skips anything thats not perfect
+function calculateAllPerfectTradeups() {
+  let allSkins = retrieveAllSkins();
+  console.log(allSkins['Kilowatt Case']['Covert']);
+}
+
+function retrieveAllSkins() {
+  let allSkins = {};
+  for (const collection of allCollections) {
+    let thisCollection = {};
+    for (const quality of allQualities) {
+      if (skins[collection][quality]) {
+        thisCollection[quality] = [];
+        for (const skin in skins[collection][quality]) {
+          thisCollection[quality].push(skins[collection][quality][skin]);
+          //console.log(skins[collection][quality][skin]);
+        }
+      }
+    }
+    allSkins[collection] = thisCollection;
+  }
+  return allSkins;
+}
+
+function allTradeupsCollection() {
   for (const collection of allCollections) {
     console.log("Trade-Ups for " + collection);
     singleCollectionTradeups(collection);
   }
 }
-function singleQualityTradeups() {
-  // combine tradeups across all collections, but only with skins from a single quality
-}
+
 // acts similarly to singleCollectionTradeups, but also recognizes min-wear and max-wear, making wear changes possible and more chances to profit
+// ***** incorrectly assumes all out wears are the same
 function singleCollectionTradeupsSmart(collection) {
   // if min-wear != 0 || max-wear != 1, find potential wear jumps and avg input wear required to do the jump
   // also if max-wear < 1 then need to notate the increased avg in wear needed to get to wears
@@ -424,8 +497,7 @@ function calculateOutcome(inputSkins) {
   }
   // then figure out the next rarity (and ensure that all skins can trade up to it)
   let inQuality = inputSkins[0].quality;
-  let qualities = ["Consumer Grade", "Industrial Grade", "Mil-Spec", "Restricted", "Classified", "Covert"];
-  let outQuality = qualities[1 + qualities.findIndex((x) => x == inQuality)];
+  let outQuality = wears[1 + wears.findIndex((x) => x == inQuality)];
   for (let i = 0; i < inputSkins.length; i++) {
     try {
       skins[inputSkins[i].collection][outQuality][0];
